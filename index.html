@@ -1,476 +1,132 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Legal AI Discovery</title>
-
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    background:#090909;
-    color:#f2f2f2;
-    font-family:Inter,system-ui,sans-serif;
-    line-height:1.7;
-}
-
-.container{
-    width:90%;
-    max-width:1100px;
-    margin:0 auto;
-}
-
-header{
-    border-bottom:1px solid #171717;
-}
-
-.nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:28px 0;
-}
-
-.logo{
-    font-size:13px;
-    letter-spacing:3px;
-    text-transform:uppercase;
-    color:#d8d8d8;
-    font-weight:600;
-}
-
-.menu{
-    display:flex;
-    gap:40px;
-}
-
-.menu a{
-    text-decoration:none;
-    color:#8c8c8c;
-    font-size:14px;
-    transition:.2s;
-}
-
-.menu a:hover{
-    color:#fff;
-}
-
-.hero{
-    padding:90px 0;
-}
-
-.hero h1{
-    font-size:54px;
-    line-height:1.08;
-    max-width:850px;
-    font-weight:500;
-}
-
-.hero p{
-    margin-top:28px;
-    max-width:720px;
-    color:#a4a4a4;
-    font-size:20px;
-}
-
-.divider{
-    border-top:1px solid #171717;
-}
-
-.section{
-    padding:90px 0;
-}
-
-.section-label{
-    color:#6f6f6f;
-    text-transform:uppercase;
-    letter-spacing:3px;
-    font-size:12px;
-    margin-bottom:40px;
-}
-
-.topic{
-    margin-bottom:60px;
-}
-
-.topic:last-child{
-    margin-bottom:0;
-}
-
-.topic-title{
-    font-size:28px;
-    margin-bottom:20px;
-    font-weight:500;
-}
-
-.topic-description{
-    color:#8d8d8d;
-    margin-bottom:25px;
-    max-width:700px;
-}
-
-.topic-articles{
-    border-top:1px solid #1a1a1a;
-}
-
-.article-link{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 0;
-    border-bottom:1px solid #1a1a1a;
-}
-
-.article-link-title{
-    font-size:17px;
-}
-
-.article-link-type{
-    color:#7f7f7f;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    font-size:12px;
-}
-
-.cta-section{
-    padding:90px 0;
-}
-
-.cta-box{
-    border:1px solid #242424;
-    padding:60px;
-    background:#0f0f0f;
-}
-
-.cta-box h2{
-    font-size:42px;
-    line-height:1.2;
-    margin-bottom:20px;
-    font-weight:500;
-}
-
-.cta-box p{
-    max-width:720px;
-    color:#9b9b9b;
-    margin-bottom:35px;
-    font-size:18px;
-}
-
-.cta-button{
-    display:inline-block;
-    padding:14px 28px;
-    background:#f2f2f2;
-    color:#090909;
-    text-decoration:none;
-    font-weight:600;
-    transition:.2s;
-}
-
-.cta-button:hover{
-    opacity:.85;
-}
-
-footer{
-    border-top:1px solid #171717;
-}
-
-.footer-inner{
-    padding:70px 0;
-    display:grid;
-    grid-template-columns:2fr 1fr;
-    gap:80px;
-}
-
-.footer-brand h3{
-    font-size:24px;
-    font-weight:500;
-    margin-bottom:18px;
-}
-
-.footer-brand p{
-    color:#8d8d8d;
-    max-width:500px;
-}
-
-.footer-links{
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-}
-
-.footer-links a{
-    color:#8d8d8d;
-    text-decoration:none;
-}
-
-.footer-links a:hover{
-    color:#fff;
-}
-
-.footer-bottom{
-    border-top:1px solid #171717;
-    padding:20px 0;
-    color:#5f5f5f;
-    font-size:13px;
-}
-
-@media(max-width:900px){
-
-.hero h1{
-    font-size:40px;
-}
-
-.cta-box{
-    padding:35px;
-}
-
-.cta-box h2{
-    font-size:32px;
-}
-
-.footer-inner{
-    grid-template-columns:1fr;
-}
-
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#090909;color:#f2f2f2;font-family:Inter,system-ui,sans-serif;line-height:1.7}
+.container{width:90%;max-width:1100px;margin:0 auto}
+header{border-bottom:1px solid #171717}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:28px 0}
+.logo{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:#d8d8d8;font-weight:600}
+.menu{display:flex;gap:20px;align-items:center}
+.menu a{text-decoration:none;color:#8c8c8c;font-size:14px}
+.nav-cta{background:#5b7fff;color:white !important;padding:10px 18px;border-radius:999px}
+.hero{padding:90px 0}
+.hero h1{font-size:54px;line-height:1.08;max-width:850px;font-weight:500}
+.hero p{margin-top:28px;max-width:720px;color:#a4a4a4;font-size:20px}
+.divider{border-top:1px solid #171717}
+.section{padding:90px 0}
+.section-label{color:#6f6f6f;text-transform:uppercase;letter-spacing:3px;font-size:12px;margin-bottom:40px}
+.topic{margin-bottom:60px}
+.topic-title{font-size:28px;margin-bottom:20px}
+.topic-description{color:#8d8d8d;margin-bottom:25px;max-width:700px}
+.topic-articles{border-top:1px solid #1a1a1a}
+.article-link{display:flex;justify-content:space-between;padding:18px 0;border-bottom:1px solid #1a1a1a}
+.article-link-type{color:#7f7f7f;font-size:12px;text-transform:uppercase}
+.cta-section{padding:90px 0}
+.cta-box{background:#10131b;border:1px solid #1f2b4d;padding:70px;border-radius:24px}
+.cta-box h2{font-size:44px;margin-bottom:24px;font-weight:500}
+.cta-box p{max-width:760px;color:#b0b7c9;font-size:18px;margin-bottom:35px}
+.cta-button{display:inline-block;background:#5b7fff;color:#fff;text-decoration:none;padding:16px 28px;border-radius:999px;font-weight:600}
+footer{border-top:1px solid #171717}
+.footer-inner{padding:70px 0;display:grid;grid-template-columns:2fr 1fr;gap:80px}
+.footer-brand p,.footer-links a{color:#8d8d8d;text-decoration:none}
+.footer-bottom{border-top:1px solid #171717;padding:20px 0;color:#5f5f5f;font-size:13px}
 </style>
-
 </head>
-
 <body>
-
 <header>
-
 <div class="container nav">
-
-<div class="logo">
-LEGAL AI DISCOVERY
-</div>
-
+<div class="logo">LEGAL AI DISCOVERY</div>
 <div class="menu">
 <a href="#">About</a>
-<a href="#">Visibility Services</a>
+<a href="#" class="nav-cta">Services</a>
 </div>
-
 </div>
-
 </header>
 
 <section class="hero">
-
 <div class="container">
-
-<h1>
-How law firms become discoverable in AI.
-</h1>
-
-<p>
-Experts on how law firms are interpreted, surfaced and recommended across AI environments.
-</p>
-
+<h1>How law firms become discoverable in AI.</h1>
+<p>Experts on how law firms are interpreted, surfaced and recommended across AI environments.</p>
 </div>
-
 </section>
 
 <div class="divider"></div>
 
 <section class="section">
-
 <div class="container">
+<div class="section-label">Research Topics</div>
 
-<div class="section-label">
-Research Topics
+<div class="topic">
+<h2 class="topic-title">How AI Discovers Law Firms</h2>
+<p class="topic-description">Understanding how AI identifies, evaluates and surfaces legal expertise.</p>
+<div class="topic-articles">
+<div class="article-link"><div>What Is Legal AI Discovery?</div><div class="article-link-type">Introduction</div></div>
+<div class="article-link"><div>How AI Discovers Law Firms</div><div class="article-link-type">Research</div></div>
+<div class="article-link"><div>AI Discovery Signals For Law Firms</div><div class="article-link-type">Research</div></div>
+</div>
 </div>
 
 <div class="topic">
-
-<h2 class="topic-title">
-How AI Discovers Law Firms
-</h2>
-
-<p class="topic-description">
-Understanding how AI identifies, evaluates and surfaces legal expertise.
-</p>
-
+<h2 class="topic-title">How AI Understands Legal Expertise</h2>
+<p class="topic-description">How legal specialization, positioning and expertise are interpreted by AI systems.</p>
 <div class="topic-articles">
-
-<div class="article-link">
-<div class="article-link-title">What Is Legal AI Discovery?</div>
-<div class="article-link-type">Introduction</div>
+<div class="article-link"><div>How AI Interprets Legal Expertise</div><div class="article-link-type">Research</div></div>
+<div class="article-link"><div>How AI Interprets Firm Positioning</div><div class="article-link-type">Research</div></div>
 </div>
-
-<div class="article-link">
-<div class="article-link-title">How AI Discovers Law Firms</div>
-<div class="article-link-type">Research</div>
-</div>
-
-<div class="article-link">
-<div class="article-link-title">AI Discovery Signals For Law Firms</div>
-<div class="article-link-type">Research</div>
-</div>
-
-</div>
-
 </div>
 
 <div class="topic">
-
-<h2 class="topic-title">
-How AI Understands Legal Expertise
-</h2>
-
-<p class="topic-description">
-How legal specialization, positioning and expertise are interpreted by AI systems.
-</p>
-
+<h2 class="topic-title">How AI Matches Firms To Clients</h2>
 <div class="topic-articles">
-
-<div class="article-link">
-<div class="article-link-title">How AI Interprets Legal Expertise</div>
-<div class="article-link-type">Research</div>
+<div class="article-link"><div>How AI Recommends Law Firms</div><div class="article-link-type">Research</div></div>
 </div>
-
-<div class="article-link">
-<div class="article-link-title">How AI Interprets Firm Positioning</div>
-<div class="article-link-type">Research</div>
-</div>
-
-</div>
-
 </div>
 
 <div class="topic">
-
-<h2 class="topic-title">
-How AI Matches Firms To Clients
-</h2>
-
-<p class="topic-description">
-Understanding how firms become relevant for specific client situations.
-</p>
-
+<h2 class="topic-title">How Discoverable Is Your Firm?</h2>
 <div class="topic-articles">
-
-<div class="article-link">
-<div class="article-link-title">How AI Recommends Law Firms</div>
-<div class="article-link-type">Research</div>
+<div class="article-link"><div>How Discoverable Is Your Law Firm?</div><div class="article-link-type">Assessment</div></div>
+</div>
 </div>
 
 </div>
-
-</div>
-
-<div class="topic">
-
-<h2 class="topic-title">
-How Discoverable Is Your Firm?
-</h2>
-
-<p class="topic-description">
-Assessing discoverability and visibility in emerging AI environments.
-</p>
-
-<div class="topic-articles">
-
-<div class="article-link">
-<div class="article-link-title">How Discoverable Is Your Law Firm?</div>
-<div class="article-link-type">Assessment</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </section>
 
 <div class="divider"></div>
 
 <section class="cta-section">
-
 <div class="container">
-
 <div class="cta-box">
-
-<h2>
-Visibility Services
-</h2>
-
+<h2>Be Ready For AI Discovery</h2>
 <p>
-Understanding AI discoverability is one thing.
-
-<br><br>
-
-Improving it is another.
-
-<br><br>
-
-Legal AI Discovery helps law firms strengthen how their expertise is represented, interpreted and surfaced across emerging AI environments.
-
+As AI becomes a new channel for discovering legal expertise, many firms are asking the same question:<br><br>
+Are we represented the way we want to be?<br><br>
+Legal AI Discovery helps firms document, assess and strengthen how they are understood across emerging AI environments.
 </p>
-
-<a href="#" class="cta-button">
-Explore Visibility Services
-</a>
-
+<a href="#" class="cta-button">Explore Services</a>
 </div>
-
 </div>
-
 </section>
 
 <footer>
-
 <div class="container">
-
 <div class="footer-inner">
-
 <div class="footer-brand">
-
-<h3>
-Legal AI Discovery
-</h3>
-
-<p>
-Researching how legal expertise is interpreted, documented and surfaced in AI environments.
-
-<br><br>
-
-Helping law firms understand how AI discovers, interprets and recommends legal expertise.
-
-</p>
-
+<h3>Legal AI Discovery</h3>
+<p>Researching how legal expertise is interpreted, documented and surfaced in AI environments.</p>
 </div>
-
 <div class="footer-links">
-
-<a href="#">About</a> <a href="#">Visibility Services</a>
-
+<a href="#">About</a><br>
+<a href="#">Services</a>
 </div>
-
 </div>
-
-<div class="footer-bottom">
-© Legal AI Discovery
+<div class="footer-bottom">© Legal AI Discovery</div>
 </div>
-
-</div>
-
 </footer>
-
 </body>
 </html>
