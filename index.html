@@ -4,6 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Legal AI Discovery</title>
 
 <style>
@@ -12,6 +13,10 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
@@ -28,7 +33,7 @@ body{
 }
 
 header{
-    border-bottom:1px solid #1c1c1c;
+    border-bottom:1px solid #1a1a1a;
 }
 
 .nav{
@@ -39,10 +44,11 @@ header{
 }
 
 .logo{
-    font-size:14px;
+    font-size:13px;
     letter-spacing:3px;
     text-transform:uppercase;
-    color:#d8d8d8;
+    color:#d7d7d7;
+    font-weight:600;
 }
 
 .menu{
@@ -51,159 +57,149 @@ header{
 }
 
 .menu a{
-    color:#999;
+    color:#8d8d8d;
     text-decoration:none;
     font-size:14px;
+    transition:0.2s;
+}
+
+.menu a:hover{
+    color:#fff;
 }
 
 .hero{
-    padding:140px 0 120px;
+    padding:90px 0 80px;
 }
 
 .eyebrow{
-    color:#7d7d7d;
+    color:#767676;
     text-transform:uppercase;
     letter-spacing:3px;
     font-size:12px;
-    margin-bottom:25px;
+    margin-bottom:20px;
 }
 
 .hero h1{
-    font-size:72px;
-    line-height:1.05;
-    max-width:900px;
+    font-size:56px;
+    line-height:1.1;
+    max-width:850px;
     font-weight:500;
 }
 
 .hero p{
-    margin-top:40px;
+    margin-top:28px;
     max-width:700px;
-    font-size:22px;
-    color:#b7b7b7;
+    color:#a3a3a3;
+    font-size:20px;
 }
 
 .divider{
-    border-top:1px solid #1b1b1b;
+    border-top:1px solid #1a1a1a;
 }
 
 .section{
-    padding:110px 0;
+    padding:90px 0;
 }
 
 .section-label{
-    color:#7d7d7d;
+    color:#747474;
     text-transform:uppercase;
     letter-spacing:3px;
     font-size:12px;
-    margin-bottom:25px;
+    margin-bottom:24px;
 }
 
 .section h2{
-    font-size:48px;
-    margin-bottom:30px;
+    font-size:42px;
+    line-height:1.2;
+    margin-bottom:24px;
     font-weight:500;
 }
 
 .section-text{
-    max-width:800px;
-    color:#a8a8a8;
-    font-size:20px;
+    max-width:780px;
+    color:#a4a4a4;
+    font-size:19px;
 }
 
 .grid{
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:24px;
-    margin-top:60px;
+    margin-top:50px;
 }
 
 .card{
     border:1px solid #1f1f1f;
-    padding:40px;
-    background:#0e0e0e;
+    background:#0d0d0d;
+    padding:36px;
 }
 
 .card h3{
-    margin-bottom:15px;
     font-size:24px;
+    margin-bottom:12px;
+    font-weight:500;
 }
 
 .card p{
-    color:#8f8f8f;
+    color:#8c8c8c;
 }
 
 .research-list{
-    margin-top:60px;
+    margin-top:50px;
 }
 
 .research-item{
-    padding:28px 0;
-    border-bottom:1px solid #1b1b1b;
     display:flex;
     justify-content:space-between;
+    align-items:center;
+    padding:26px 0;
+    border-bottom:1px solid #1a1a1a;
+}
+
+.research-item div{
+    font-size:18px;
 }
 
 .research-item span{
-    color:#8f8f8f;
+    color:#818181;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:1px;
 }
 
-.framework{
-    border:1px solid #222;
-    padding:60px;
-    margin-top:50px;
-    background:#0c0c0c;
-}
-
-.framework h3{
-    font-size:32px;
-    margin-bottom:20px;
-}
-
-.framework p{
-    color:#9a9a9a;
-    max-width:700px;
-}
-
-.cta{
-    text-align:center;
-    padding:140px 0;
-}
-
-.cta h2{
-    font-size:56px;
-    margin-bottom:25px;
-}
-
-.cta p{
-    max-width:700px;
-    margin:0 auto;
-    color:#999;
-    font-size:20px;
-}
-
-.button{
-    display:inline-block;
+.profile-box{
+    border:1px solid #202020;
+    background:#0d0d0d;
+    padding:50px;
     margin-top:40px;
-    padding:16px 28px;
-    border:1px solid #333;
-    color:#fff;
-    text-decoration:none;
+}
+
+.profile-box h3{
+    font-size:30px;
+    margin-bottom:18px;
+    font-weight:500;
+}
+
+.profile-box p{
+    max-width:700px;
+    color:#9a9a9a;
 }
 
 footer{
-    border-top:1px solid #1c1c1c;
+    border-top:1px solid #1a1a1a;
     padding:50px 0;
 }
 
 .footer-text{
-    color:#666;
+    color:#6f6f6f;
     font-size:14px;
 }
 
 @media(max-width:900px){
 
 .hero h1{
-    font-size:46px;
+    font-size:42px;
 }
 
 .grid{
@@ -211,11 +207,7 @@ footer{
 }
 
 .section h2{
-    font-size:36px;
-}
-
-.cta h2{
-    font-size:40px;
+    font-size:34px;
 }
 
 }
@@ -227,6 +219,7 @@ footer{
 <body>
 
 <header>
+
 <div class="container nav">
 
 <div class="logo">
@@ -235,34 +228,38 @@ LEGAL AI DISCOVERY
 
 <div class="menu">
 <a href="#">Research</a>
-<a href="#">Framework</a>
-<a href="#">Advisory</a>
+<a href="#">Profiles</a>
+<a href="#">About</a>
 </div>
 
 </div>
+
 </header>
 
 <section class="hero">
+
 <div class="container">
 
 <div class="eyebrow">
-Research Initiative
+Independent Research Initiative
 </div>
 
 <h1>
-Understanding how law firms are interpreted, discovered and recommended in AI environments.
+How law firms become discoverable in AI.
 </h1>
 
 <p>
-AI is changing how legal expertise is surfaced. Legal AI Discovery explores how law firms become discoverable, understandable and recommendable in emerging AI systems.
+Legal AI Discovery studies how law firms are interpreted, surfaced and recommended across emerging AI environments.
 </p>
 
 </div>
+
 </section>
 
 <div class="divider"></div>
 
 <section class="section">
+
 <div class="container">
 
 <div class="section-label">
@@ -274,15 +271,17 @@ How do law firms become discoverable in AI?
 </h2>
 
 <p class="section-text">
-As AI systems become a growing layer between expertise and clients, discoverability may become increasingly important. This project studies the mechanisms behind AI-mediated legal discovery.
+As AI increasingly influences how expertise is found and evaluated, law firms face a new question: what signals help AI systems understand, interpret and recommend legal expertise?
 </p>
 
 </div>
+
 </section>
 
 <div class="divider"></div>
 
 <section class="section">
+
 <div class="container">
 
 <div class="section-label">
@@ -293,27 +292,22 @@ Research Areas
 
 <div class="card">
 <h3>Discovery</h3>
-<p>How AI finds and surfaces law firms.</p>
+<p>How AI identifies and surfaces legal expertise.</p>
 </div>
 
 <div class="card">
 <h3>Interpretation</h3>
-<p>How AI understands legal expertise.</p>
+<p>How AI understands firms, services and expertise.</p>
 </div>
 
 <div class="card">
 <h3>Recommendation</h3>
-<p>How AI selects firms for specific situations.</p>
+<p>How firms become relevant for specific situations.</p>
 </div>
 
 <div class="card">
 <h3>Signals</h3>
-<p>What influences discoverability.</p>
-</div>
-
-<div class="card">
-<h3>Assessment</h3>
-<p>How firms can evaluate discoverability.</p>
+<p>What influences AI understanding and visibility.</p>
 </div>
 
 <div class="card">
@@ -321,14 +315,21 @@ Research Areas
 <p>How AI interprets legal specialization.</p>
 </div>
 
+<div class="card">
+<h3>Assessment</h3>
+<p>How discoverable a law firm may be today.</p>
 </div>
 
 </div>
+
+</div>
+
 </section>
 
 <div class="divider"></div>
 
 <section class="section">
+
 <div class="container">
 
 <div class="section-label">
@@ -339,27 +340,27 @@ Featured Research
 
 <div class="research-item">
 <div>What Is Legal AI Discovery?</div>
-<span>Research</span>
+<span>Introduction</span>
 </div>
 
 <div class="research-item">
 <div>How AI Discovers Law Firms</div>
-<span>Research</span>
+<span>Discovery</span>
 </div>
 
 <div class="research-item">
 <div>How AI Interprets Legal Expertise</div>
-<span>Research</span>
+<span>Interpretation</span>
 </div>
 
 <div class="research-item">
 <div>How AI Recommends Law Firms</div>
-<span>Research</span>
+<span>Recommendation</span>
 </div>
 
 <div class="research-item">
-<div>AI Discovery Signals</div>
-<span>Research</span>
+<div>AI Discovery Signals For Law Firms</div>
+<span>Signals</span>
 </div>
 
 <div class="research-item">
@@ -370,49 +371,67 @@ Featured Research
 </div>
 
 </div>
+
 </section>
 
 <div class="divider"></div>
 
 <section class="section">
+
 <div class="container">
 
 <div class="section-label">
-Framework
+Legal AI Discovery Profiles
 </div>
 
-<div class="framework">
+<h2>
+Structured firm profiles for AI environments.
+</h2>
+
+<div class="profile-box">
 
 <h3>
-The Legal AI Discovery Framework
+AI Discovery Profiles
 </h3>
 
 <p>
-A structured model for understanding how legal expertise is represented, interpreted and surfaced in AI environments.
+Legal AI Discovery Profiles document how law firms describe their expertise, client focus, jurisdictions and specialization areas. Designed to create a clearer representation of legal expertise within AI environments.
 </p>
 
 </div>
 
 </div>
+
 </section>
 
 <div class="divider"></div>
 
-<section class="cta">
+<section class="section">
 
 <div class="container">
 
-<h2>
-AI Visibility For Law Firms
-</h2>
+<div class="section-label">
+Latest Additions
+</div>
 
-<p>
-For firms seeking to understand how AI systems interpret and represent legal expertise.
-</p>
+<div class="research-list">
 
-<a href="#" class="button">
-Learn More
-</a>
+<div class="research-item">
+<div>Employment Law Firms</div>
+<span>Profile</span>
+</div>
+
+<div class="research-item">
+<div>Corporate Law Firms</div>
+<span>Profile</span>
+</div>
+
+<div class="research-item">
+<div>M&A Advisory Practices</div>
+<span>Profile</span>
+</div>
+
+</div>
 
 </div>
 
@@ -423,7 +442,12 @@ Learn More
 <div class="container">
 
 <div class="footer-text">
-Legal AI Discovery · Researching AI-mediated legal discoverability.
+Legal AI Discovery
+
+<br><br>
+
+Researching how legal expertise is interpreted, documented and surfaced in AI environments.
+
 </div>
 
 </div>
