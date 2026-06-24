@@ -98,65 +98,92 @@ header{
     text-transform:uppercase;
     letter-spacing:3px;
     font-size:12px;
-    margin-bottom:30px;
+    margin-bottom:40px;
 }
 
-.archive{
-    margin-top:20px;
+.topic{
+    margin-bottom:60px;
 }
 
-.archive-item{
+.topic:last-child{
+    margin-bottom:0;
+}
+
+.topic-title{
+    font-size:28px;
+    margin-bottom:20px;
+    font-weight:500;
+}
+
+.topic-description{
+    color:#8d8d8d;
+    margin-bottom:25px;
+    max-width:700px;
+}
+
+.topic-articles{
+    border-top:1px solid #1a1a1a;
+}
+
+.article-link{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:24px 0;
+    padding:18px 0;
     border-bottom:1px solid #1a1a1a;
 }
 
-.archive-number{
-    color:#5e5e5e;
-    width:60px;
-    flex-shrink:0;
+.article-link-title{
+    font-size:17px;
 }
 
-.archive-title{
-    flex:1;
-    font-size:22px;
-}
-
-.archive-description{
-    color:#868686;
-    max-width:420px;
-    text-align:right;
-    font-size:15px;
-}
-
-.research-list{
-    margin-top:10px;
-}
-
-.research-item{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:28px 0;
-    border-bottom:1px solid #1a1a1a;
-}
-
-.research-item div{
-    font-size:19px;
-}
-
-.research-item span{
+.article-link-type{
     color:#7f7f7f;
     text-transform:uppercase;
     letter-spacing:1px;
     font-size:12px;
 }
 
+.cta-section{
+    padding:90px 0;
+}
+
+.cta-box{
+    border:1px solid #242424;
+    padding:60px;
+    background:#0f0f0f;
+}
+
+.cta-box h2{
+    font-size:42px;
+    line-height:1.2;
+    margin-bottom:20px;
+    font-weight:500;
+}
+
+.cta-box p{
+    max-width:720px;
+    color:#9b9b9b;
+    margin-bottom:35px;
+    font-size:18px;
+}
+
+.cta-button{
+    display:inline-block;
+    padding:14px 28px;
+    background:#f2f2f2;
+    color:#090909;
+    text-decoration:none;
+    font-weight:600;
+    transition:.2s;
+}
+
+.cta-button:hover{
+    opacity:.85;
+}
+
 footer{
     border-top:1px solid #171717;
-    margin-top:40px;
 }
 
 .footer-inner{
@@ -205,14 +232,12 @@ footer{
     font-size:40px;
 }
 
-.archive-item{
-    flex-direction:column;
-    align-items:flex-start;
-    gap:10px;
+.cta-box{
+    padding:35px;
 }
 
-.archive-description{
-    text-align:left;
+.cta-box h2{
+    font-size:32px;
 }
 
 .footer-inner{
@@ -236,9 +261,8 @@ LEGAL AI DISCOVERY
 </div>
 
 <div class="menu">
-<a href="#">Research</a>
 <a href="#">About</a>
-<a href="#">Advisory</a>
+<a href="#">Visibility Services</a>
 </div>
 
 </div>
@@ -271,54 +295,101 @@ Experts on how law firms are interpreted, surfaced and recommended across AI env
 Research Topics
 </div>
 
-<div class="archive">
+<div class="topic">
 
-<div class="archive-item">
-<div class="archive-number">01</div>
-<div class="archive-title">How AI Discovers Law Firms</div>
-<div class="archive-description">
-How AI identifies and surfaces legal expertise.
-</div>
-</div>
+<h2 class="topic-title">
+How AI Discovers Law Firms
+</h2>
 
-<div class="archive-item">
-<div class="archive-number">02</div>
-<div class="archive-title">How AI Understands Legal Expertise</div>
-<div class="archive-description">
-How AI interprets firms, services and areas of expertise.
-</div>
-</div>
+<p class="topic-description">
+Understanding how AI identifies, evaluates and surfaces legal expertise.
+</p>
 
-<div class="archive-item">
-<div class="archive-number">03</div>
-<div class="archive-title">How AI Matches Firms To Clients</div>
-<div class="archive-description">
-How firms become relevant for specific client situations.
-</div>
+<div class="topic-articles">
+
+<div class="article-link">
+<div class="article-link-title">What Is Legal AI Discovery?</div>
+<div class="article-link-type">Introduction</div>
 </div>
 
-<div class="archive-item">
-<div class="archive-number">04</div>
-<div class="archive-title">What Influences AI Visibility</div>
-<div class="archive-description">
-The signals that shape discoverability and relevance.
-</div>
+<div class="article-link">
+<div class="article-link-title">How AI Discovers Law Firms</div>
+<div class="article-link-type">Research</div>
 </div>
 
-<div class="archive-item">
-<div class="archive-number">05</div>
-<div class="archive-title">How AI Interprets Firm Positioning</div>
-<div class="archive-description">
-How specialization, focus and expertise are understood.
-</div>
+<div class="article-link">
+<div class="article-link-title">AI Discovery Signals For Law Firms</div>
+<div class="article-link-type">Research</div>
 </div>
 
-<div class="archive-item">
-<div class="archive-number">06</div>
-<div class="archive-title">How Discoverable Is Your Firm?</div>
-<div class="archive-description">
-Assessing discoverability in AI environments.
 </div>
+
+</div>
+
+<div class="topic">
+
+<h2 class="topic-title">
+How AI Understands Legal Expertise
+</h2>
+
+<p class="topic-description">
+How legal specialization, positioning and expertise are interpreted by AI systems.
+</p>
+
+<div class="topic-articles">
+
+<div class="article-link">
+<div class="article-link-title">How AI Interprets Legal Expertise</div>
+<div class="article-link-type">Research</div>
+</div>
+
+<div class="article-link">
+<div class="article-link-title">How AI Interprets Firm Positioning</div>
+<div class="article-link-type">Research</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="topic">
+
+<h2 class="topic-title">
+How AI Matches Firms To Clients
+</h2>
+
+<p class="topic-description">
+Understanding how firms become relevant for specific client situations.
+</p>
+
+<div class="topic-articles">
+
+<div class="article-link">
+<div class="article-link-title">How AI Recommends Law Firms</div>
+<div class="article-link-type">Research</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="topic">
+
+<h2 class="topic-title">
+How Discoverable Is Your Firm?
+</h2>
+
+<p class="topic-description">
+Assessing discoverability and visibility in emerging AI environments.
+</p>
+
+<div class="topic-articles">
+
+<div class="article-link">
+<div class="article-link-title">How Discoverable Is Your Law Firm?</div>
+<div class="article-link-type">Assessment</div>
+</div>
+
 </div>
 
 </div>
@@ -329,45 +400,32 @@ Assessing discoverability in AI environments.
 
 <div class="divider"></div>
 
-<section class="section">
+<section class="cta-section">
 
 <div class="container">
 
-<div class="section-label">
-Featured Research
-</div>
+<div class="cta-box">
 
-<div class="research-list">
+<h2>
+Visibility Services
+</h2>
 
-<div class="research-item">
-<div>What Is Legal AI Discovery?</div>
-<span>Introduction</span>
-</div>
+<p>
+Understanding AI discoverability is one thing.
 
-<div class="research-item">
-<div>How AI Discovers Law Firms</div>
-<span>Discovery</span>
-</div>
+<br><br>
 
-<div class="research-item">
-<div>How AI Interprets Legal Expertise</div>
-<span>Interpretation</span>
-</div>
+Improving it is another.
 
-<div class="research-item">
-<div>How AI Recommends Law Firms</div>
-<span>Recommendation</span>
-</div>
+<br><br>
 
-<div class="research-item">
-<div>AI Discovery Signals For Law Firms</div>
-<span>Signals</span>
-</div>
+Legal AI Discovery helps law firms strengthen how their expertise is represented, interpreted and surfaced across emerging AI environments.
 
-<div class="research-item">
-<div>How Discoverable Is Your Law Firm?</div>
-<span>Assessment</span>
-</div>
+</p>
+
+<a href="#" class="cta-button">
+Explore Visibility Services
+</a>
 
 </div>
 
@@ -388,13 +446,11 @@ Legal AI Discovery
 </h3>
 
 <p>
-Researching how legal expertise is interpreted,
-documented and surfaced in AI environments.
+Researching how legal expertise is interpreted, documented and surfaced in AI environments.
 
 <br><br>
 
-Helping law firms understand how AI discovers,
-interprets and recommends legal expertise.
+Helping law firms understand how AI discovers, interprets and recommends legal expertise.
 
 </p>
 
@@ -402,7 +458,7 @@ interprets and recommends legal expertise.
 
 <div class="footer-links">
 
-<a href="#">Research</a> <a href="#">About</a> <a href="#">Advisory</a> <a href="#">Contact</a>
+<a href="#">About</a> <a href="#">Visibility Services</a>
 
 </div>
 
