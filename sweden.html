@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
@@ -24,7 +23,7 @@ box-sizing:border-box;
 
 html{
 
-background:#f5f4ef;
+background:#f3f2ec;
 
 }
 
@@ -38,21 +37,21 @@ line-height:1.55;
 
 color:#202020;
 
-padding:48px 60px;
+padding:40px;
 
 }
 
 .document{
 
-max-width:980px;
+max-width:920px;
 
 margin:auto;
 
 background:#fbfaf7;
 
-padding:48px 54px 80px;
+border:1px solid #d8d5cc;
 
-border:1px solid #d6d2c8;
+padding:38px 46px 70px;
 
 }
 
@@ -60,23 +59,13 @@ header{
 
 display:grid;
 
-grid-template-columns:1fr 220px;
+grid-template-columns:1fr 240px;
 
 column-gap:40px;
 
-padding-bottom:22px;
+padding-bottom:18px;
 
-border-bottom:1px solid #4b4b4b;
-
-}
-
-.header-left{
-
-display:flex;
-
-flex-direction:column;
-
-gap:8px;
+border-bottom:1px solid #3f3f3f;
 
 }
 
@@ -84,45 +73,131 @@ gap:8px;
 
 font-size:10px;
 
-letter-spacing:2px;
+letter-spacing:2.5px;
 
 text-transform:uppercase;
 
 color:#777;
 
+margin-bottom:14px;
+
 }
 
 .title{
 
-font-size:42px;
+font-size:34px;
 
 font-weight:400;
 
-letter-spacing:-1px;
-
-margin-top:8px;
+letter-spacing:-.6px;
 
 }
 
 .subtitle{
 
-font-size:15px;
+margin-top:6px;
 
-color:#666;
+font-size:14px;
+
+color:#777;
 
 }
 
-.header-right{
+.archive{
 
-border-left:1px solid #cfcabf;
+border-left:1px solid #cfcac0;
 
-padding-left:22px;
+padding-left:20px;
+
+}
+
+.archive-item{
+
+margin-bottom:14px;
+
+}
+
+.archive-label{
+
+font-size:10px;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+color:#888;
+
+margin-bottom:2px;
+
+}
+
+.archive-value{
+
+font-size:14px;
+
+}
+
+.section{
+
+margin-top:42px;
+
+}
+
+.section-header{
 
 display:flex;
 
-flex-direction:column;
+align-items:center;
 
-gap:10px;
+gap:16px;
+
+margin-bottom:18px;
+
+}
+
+.section-number{
+
+font-size:10px;
+
+letter-spacing:2px;
+
+color:#999;
+
+width:26px;
+
+}
+
+.section-title{
+
+font-size:10px;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+color:#444;
+
+}
+
+.rule{
+
+flex:1;
+
+height:1px;
+
+background:#cfcac0;
+
+}
+
+.meta{
+
+display:grid;
+
+grid-template-columns:180px 1fr;
+
+row-gap:8px;
+
+column-gap:36px;
 
 }
 
@@ -134,93 +209,49 @@ letter-spacing:1.8px;
 
 text-transform:uppercase;
 
-color:#777;
+color:#8a8a8a;
 
 }
 
 .meta-value{
 
-font-size:14px;
+font-size:15px;
 
 }
 
-.section{
+.position{
 
-margin-top:46px;
+padding:16px 0;
 
-}
+border-top:1px dotted #d5d2ca;
 
-.section-header{
-
-display:flex;
-
-align-items:center;
-
-gap:18px;
-
-margin-bottom:22px;
+border-bottom:1px dotted #d5d2ca;
 
 }
 
-.section-number{
+.node{
 
-font-size:11px;
-
-letter-spacing:2px;
-
-color:#777;
-
-width:34px;
-
-}
-
-.section-title{
-
-font-size:11px;
-
-letter-spacing:2px;
-
-text-transform:uppercase;
-
-}
-
-.section-line{
-
-flex:1;
-
-height:1px;
-
-background:#bdb8ae;
-
-}
-
-.metadata{
-
-display:grid;
-
-grid-template-columns:220px 1fr;
-
-row-gap:12px;
-
-column-gap:40px;
-
-}
-
-.label{
-
-font-size:10px;
-
-letter-spacing:1.8px;
-
-text-transform:uppercase;
-
-color:#777;
-
-}
-
-.value{
+padding:4px 0;
 
 font-size:15px;
+
+}
+
+.node span{
+
+display:inline-block;
+
+width:22px;
+
+color:#888;
+
+}
+
+.arrow{
+
+padding-left:22px;
+
+color:#999;
 
 }
 
@@ -228,17 +259,17 @@ font-size:15px;
 
 display:flex;
 
-gap:24px;
+gap:22px;
 
-padding:10px 0;
+padding:9px 0;
 
-border-bottom:1px dotted #d5d2cb;
+border-bottom:1px dotted #d8d5cd;
 
 }
 
 .object-id{
 
-width:40px;
+width:32px;
 
 font-size:10px;
 
@@ -256,7 +287,7 @@ font-size:15px;
 
 }
 
-.footer{
+footer{
 
 margin-top:70px;
 
@@ -274,7 +305,7 @@ letter-spacing:2px;
 
 text-transform:uppercase;
 
-color:#666;
+color:#777;
 
 }
 
@@ -288,7 +319,7 @@ padding:20px;
 
 .document{
 
-padding:30px;
+padding:28px;
 
 }
 
@@ -296,23 +327,23 @@ header{
 
 grid-template-columns:1fr;
 
-row-gap:28px;
+row-gap:26px;
 
 }
 
-.header-right{
+.archive{
 
 border-left:none;
 
-padding-left:0;
+border-top:1px solid #d5d2ca;
 
-border-top:1px solid #d7d3ca;
+padding-left:0;
 
 padding-top:20px;
 
 }
 
-.metadata{
+.meta{
 
 grid-template-columns:1fr;
 
@@ -330,7 +361,7 @@ grid-template-columns:1fr;
 
 <header>
 
-<div class="header-left">
+<div>
 
 <div class="series">
 
@@ -338,11 +369,11 @@ REFERENCE RECORD SERIES
 
 </div>
 
-<h1 class="title">
+<div class="title">
 
 Bookkeeping Records
 
-</h1>
+</div>
 
 <div class="subtitle">
 
@@ -352,17 +383,17 @@ Jurisdiction Record · Sweden
 
 </div>
 
-<div class="header-right">
+<div class="archive">
 
-<div>
+<div class="archive-item">
 
-<div class="meta-label">
+<div class="archive-label">
 
-Reference ID
+Record
 
 </div>
 
-<div class="meta-value">
+<div class="archive-value">
 
 BK-SE-000001
 
@@ -370,31 +401,31 @@ BK-SE-000001
 
 </div>
 
-<div>
+<div class="archive-item">
 
-<div class="meta-label">
+<div class="archive-label">
 
-Record Class
-
-</div>
-
-<div class="meta-value">
-
-Jurisdiction Record
+Class
 
 </div>
 
+<div class="archive-value">
+
+JR
+
 </div>
 
-<div>
+</div>
 
-<div class="meta-label">
+<div class="archive-item">
+
+<div class="archive-label">
 
 Status
 
 </div>
 
-<div class="meta-value">
+<div class="archive-value">
 
 Published
 
@@ -402,15 +433,15 @@ Published
 
 </div>
 
-<div>
+<div class="archive-item">
 
-<div class="meta-label">
+<div class="archive-label">
 
 Revision
 
 </div>
 
-<div class="meta-value">
+<div class="archive-value">
 
 01
 
@@ -434,39 +465,33 @@ Revision
 
 <div class="section-title">
 
-Record Identification
+Identity
 
 </div>
 
-<div class="section-line"></div>
+<div class="rule"></div>
 
 </div>
 
-<div class="metadata">
+<div class="meta">
 
-<div class="label">Knowledge Domain</div>
-<div class="value">Bookkeeping</div>
+<div class="meta-label">Domain</div>
+<div class="meta-value">Accounting</div>
 
-<div class="label">Jurisdiction</div>
-<div class="value">Sweden</div>
+<div class="meta-label">Discipline</div>
+<div class="meta-value">Bookkeeping</div>
 
-<div class="label">Professional Classification</div>
-<div class="value">Professional Knowledge Record</div>
+<div class="meta-label">Jurisdiction</div>
+<div class="meta-value">Sweden</div>
 
-<div class="label">Primary Language</div>
-<div class="value">English</div>
+<div class="meta-label">Record Class</div>
+<div class="meta-value">Professional Knowledge Record</div>
 
-<div class="label">Jurisdiction Language</div>
-<div class="value">Swedish</div>
+<div class="meta-label">Language</div>
+<div class="meta-value">English / Swedish</div>
 
-<div class="label">Publication Status</div>
-<div class="value">Published</div>
-
-<div class="label">Record Version</div>
-<div class="value">1.0</div>
-
-<div class="label">Last Revision</div>
-<div class="value">2026</div>
+<div class="meta-label">Coverage</div>
+<div class="meta-value">National</div>
 
 </div>
 
@@ -484,77 +509,35 @@ Record Identification
 
 <div class="section-title">
 
-Domain Objects
+Position
 
 </div>
 
-<div class="section-line"></div>
+<div class="rule"></div>
 
 </div>
 
-<div class="object">
+<div class="position">
 
-<div class="object-id">001</div>
+<div class="node"><span>01</span>Business Administration</div>
 
-<div class="object-name">
+<div class="arrow">↓</div>
 
-Bookkeeping
+<div class="node"><span>02</span>Accounting</div>
 
-</div>
+<div class="arrow">↓</div>
 
-</div>
+<div class="node"><span>03</span>Bookkeeping</div>
 
-<div class="object">
+<div class="arrow">↓</div>
 
-<div class="object-id">002</div>
-
-<div class="object-name">
-
-General Ledger
+<div class="node"><span>04</span>General Ledger</div>
 
 </div>
-
-</div>
-
-<div class="object">
-
-<div class="object-id">003</div>
-
-<div class="object-name">
-
-VAT Accounting
-
-</div>
-
-</div>
-
-<div class="object">
-
-<div class="object-id">004</div>
-
-<div class="object-name">
-
-Financial Reporting
-
-</div>
-
-</div>
-
-<div class="object">
-
-<div class="object-id">005</div>
-
-<div class="object-name">
-
-Year-End Closing
-
-</div>
-
-</div>
-
-```html
 
 </section>
+
+```html
 
 <section class="section">
 
@@ -568,75 +551,97 @@ Year-End Closing
 
 <div class="section-title">
 
-Jurisdiction Objects
+Related Domains
 
 </div>
 
-<div class="section-line"></div>
+<div class="rule"></div>
+
+</div>
+
+<div class="object">
+
+<div class="object-id">
+
+RD01
+
+</div>
+
+<div class="object-name">
+
+Financial Reporting
+
+</div>
 
 </div>
 
 <div class="object">
-<div class="object-id">001</div>
-<div class="object-name">Bokföringslagen (1999:1078)</div>
+
+<div class="object-id">
+
+RD02
+
+</div>
+
+<div class="object-name">
+
+Payroll Administration
+
+</div>
+
 </div>
 
 <div class="object">
-<div class="object-id">002</div>
-<div class="object-name">Årsredovisningslagen (1995:1554)</div>
+
+<div class="object-id">
+
+RD03
+
+</div>
+
+<div class="object-name">
+
+Management Accounting
+
+</div>
+
 </div>
 
 <div class="object">
-<div class="object-id">003</div>
-<div class="object-name">Bokföringsnämnden (BFN)</div>
+
+<div class="object-id">
+
+RD04
+
+</div>
+
+<div class="object-name">
+
+Tax Compliance
+
+</div>
+
 </div>
 
 <div class="object">
-<div class="object-id">004</div>
-<div class="object-name">BFNAR</div>
+
+<div class="object-id">
+
+RD05
+
 </div>
 
-<div class="object">
-<div class="object-id">005</div>
-<div class="object-name">Skatteverket</div>
+<div class="object-name">
+
+Audit Preparation
+
 </div>
 
-<div class="object">
-<div class="object-id">006</div>
-<div class="object-name">Bolagsverket</div>
-</div>
-
-<div class="object">
-<div class="object-id">007</div>
-<div class="object-name">FAR</div>
-</div>
-
-<div class="object">
-<div class="object-id">008</div>
-<div class="object-name">SRF Konsulterna</div>
-</div>
-
-<div class="object">
-<div class="object-id">009</div>
-<div class="object-name">K2</div>
-</div>
-
-<div class="object">
-<div class="object-id">010</div>
-<div class="object-name">K3</div>
-</div>
-
-<div class="object">
-<div class="object-id">011</div>
-<div class="object-name">BAS-kontoplan</div>
-</div>
-
-<div class="object">
-<div class="object-id">012</div>
-<div class="object-name">SIE Format</div>
 </div>
 
 </section>
+
+
 
 <section class="section">
 
@@ -650,75 +655,129 @@ Jurisdiction Objects
 
 <div class="section-title">
 
-Controlled Vocabulary
+Jurisdiction
 
 </div>
 
-<div class="section-line"></div>
+<div class="rule"></div>
+
+</div>
+
+<div class="object">
+
+<div class="object-id">
+
+SE01
+
+</div>
+
+<div class="object-name">
+
+Bokföringslagen (1999:1078)
+
+</div>
 
 </div>
 
 <div class="object">
-<div class="object-id">001</div>
-<div class="object-name">Verifikation</div>
+
+<div class="object-id">
+
+SE02
+
+</div>
+
+<div class="object-name">
+
+Årsredovisningslagen (1995:1554)
+
+</div>
+
 </div>
 
 <div class="object">
-<div class="object-id">002</div>
-<div class="object-name">Grundbok</div>
+
+<div class="object-id">
+
+SE03
+
+</div>
+
+<div class="object-name">
+
+Bokföringsnämnden (BFN)
+
+</div>
+
 </div>
 
 <div class="object">
-<div class="object-id">003</div>
-<div class="object-name">Huvudbok</div>
+
+<div class="object-id">
+
+SE04
+
+</div>
+
+<div class="object-name">
+
+BFNAR
+
+</div>
+
 </div>
 
 <div class="object">
-<div class="object-id">004</div>
-<div class="object-name">Löpande bokföring</div>
+
+<div class="object-id">
+
+SE05
+
+</div>
+
+<div class="object-name">
+
+BAS-kontoplan
+
+</div>
+
 </div>
 
 <div class="object">
-<div class="object-id">005</div>
-<div class="object-name">Momsredovisning</div>
+
+<div class="object-id">
+
+SE06
+
+</div>
+
+<div class="object-name">
+
+K2
+
+</div>
+
 </div>
 
 <div class="object">
-<div class="object-id">006</div>
-<div class="object-name">Balansrapport</div>
+
+<div class="object-id">
+
+SE07
+
 </div>
 
-<div class="object">
-<div class="object-id">007</div>
-<div class="object-name">Resultatrapport</div>
+<div class="object-name">
+
+K3
+
 </div>
 
-<div class="object">
-<div class="object-id">008</div>
-<div class="object-name">Periodisering</div>
-</div>
-
-<div class="object">
-<div class="object-id">009</div>
-<div class="object-name">Räkenskapsår</div>
-</div>
-
-<div class="object">
-<div class="object-id">010</div>
-<div class="object-name">Kundreskontra</div>
-</div>
-
-<div class="object">
-<div class="object-id">011</div>
-<div class="object-name">Leverantörsreskontra</div>
-</div>
-
-<div class="object">
-<div class="object-id">012</div>
-<div class="object-name">Avstämning</div>
 </div>
 
 </section>
+
+
 
 <section class="section">
 
@@ -732,40 +791,97 @@ Controlled Vocabulary
 
 <div class="section-title">
 
-Recorded Entities
+Authorities
 
 </div>
 
-<div class="section-line"></div>
+<div class="rule"></div>
+
+</div>
+
+<div class="object">
+
+<div class="object-id">
+
+AU01
+
+</div>
+
+<div class="object-name">
+
+Skatteverket
+
+</div>
 
 </div>
 
 <div class="object">
-<div class="object-id">001</div>
-<div class="object-name">Nordic Ledger AB</div>
+
+<div class="object-id">
+
+AU02
+
+</div>
+
+<div class="object-name">
+
+Bolagsverket
+
+</div>
+
 </div>
 
 <div class="object">
-<div class="object-id">002</div>
-<div class="object-name">Stockholm Accounting Group</div>
+
+<div class="object-id">
+
+AU03
+
+</div>
+
+<div class="object-name">
+
+Bokföringsnämnden
+
+</div>
+
 </div>
 
 <div class="object">
-<div class="object-id">003</div>
-<div class="object-name">Svea Financial Services</div>
+
+<div class="object-id">
+
+AU04
+
+</div>
+
+<div class="object-name">
+
+FAR
+
+</div>
+
 </div>
 
 <div class="object">
-<div class="object-id">004</div>
-<div class="object-name">Baltic Accounting Partners</div>
+
+<div class="object-id">
+
+AU05
+
 </div>
 
-<div class="object">
-<div class="object-id">005</div>
-<div class="object-name">Scandinavian Ledger Solutions</div>
+<div class="object-name">
+
+SRF Konsulterna
+
+</div>
+
 </div>
 
 </section>
+
+
 
 <section class="section">
 
@@ -779,69 +895,76 @@ Recorded Entities
 
 <div class="section-title">
 
-Archive Metadata
+Frameworks
 
 </div>
 
-<div class="section-line"></div>
+<div class="rule"></div>
 
 </div>
 
-<div class="metadata">
+<div class="object">
 
-<div class="label">Reference Series</div>
-<div class="value">Bookkeeping Records</div>
+<div class="object-id">
 
-<div class="label">Coverage</div>
-<div class="value">National</div>
+FW01
 
-<div class="label">Entity Records</div>
-<div class="value">5</div>
+</div>
 
-<div class="label">Domain Objects</div>
-<div class="value">12</div>
+<div class="object-name">
 
-<div class="label">Controlled Vocabulary</div>
-<div class="value">12</div>
+Swedish GAAP
 
-<div class="label">Jurisdiction Objects</div>
-<div class="value">12</div>
+</div>
 
-<div class="label">Archive Status</div>
-<div class="value">Current</div>
+</div>
 
-<div class="label">Record Integrity</div>
-<div class="value">Verified</div>
+<div class="object">
+
+<div class="object-id">
+
+FW02
+
+</div>
+
+<div class="object-name">
+
+K2 Framework
+
+</div>
+
+</div>
+
+<div class="object">
+
+<div class="object-id">
+
+FW03
+
+</div>
+
+<div class="object-name">
+
+K3 Framework
+
+</div>
+
+</div>
+
+<div class="object">
+
+<div class="object-id">
+
+FW04
+
+</div>
+
+<div class="object-name">
+
+BFN General Advice
+
+</div>
 
 </div>
 
 </section>
-
-<footer class="footer">
-
-<div>
-
-REFERENCE RECORD SERIES
-
-</div>
-
-<div>
-
-BOOKKEEPING RECORDS
-
-</div>
-
-<div>
-
-SWEDEN
-
-</div>
-
-</footer>
-
-</div>
-
-</body>
-
-</html>
-
