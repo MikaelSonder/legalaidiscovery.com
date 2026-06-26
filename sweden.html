@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,124 +15,100 @@ box-sizing:border-box;
 }
 
 html{
-background:#fafaf8;
+background:#f8f8f6;
 }
 
 body{
 margin:0;
 padding:0;
-background:#fafaf8;
-color:#111;
-font-family:"Courier New",Courier,monospace;
-font-size:14px;
-line-height:1.6;
+background:#f8f8f6;
+color:#161616;
+font-family:"IBM Plex Serif", Georgia, serif;
+font-size:15px;
+line-height:1.55;
+-webkit-font-smoothing:antialiased;
 }
 
 .container{
 max-width:760px;
 margin:auto;
-padding:50px 34px 100px;
+padding:56px 36px 110px;
 }
 
 .top{
 display:flex;
 justify-content:space-between;
-border-bottom:1px solid #ddd;
-padding-bottom:12px;
-margin-bottom:40px;
-font-size:12px;
+align-items:center;
+padding-bottom:14px;
+border-bottom:1px solid #ddddda;
+margin-bottom:48px;
+font-size:11px;
+letter-spacing:1.6px;
 text-transform:uppercase;
-letter-spacing:1px;
 color:#666;
 }
 
 h1{
 margin:0;
-font-size:38px;
-font-weight:normal;
-letter-spacing:0;
+font-size:42px;
+font-weight:400;
+letter-spacing:-0.5px;
 }
 
-.block{
-margin-top:42px;
+.subtitle{
+margin-top:6px;
+font-size:18px;
+color:#666;
 }
 
-.header{
+.section{
+margin-top:54px;
+}
 
-font-size:12px;
-
-text-transform:uppercase;
-
+.section-title{
+font-size:11px;
 letter-spacing:2px;
-
-margin-bottom:12px;
-
-color:#666;
-
-}
-
-table{
-
-width:100%;
-
-border-collapse:collapse;
-
-}
-
-td{
-
-padding:8px 0;
-
-border-bottom:1px solid #ececec;
-
-vertical-align:top;
-
-}
-
-td:first-child{
-
-width:260px;
-
-color:#666;
-
 text-transform:uppercase;
-
-font-size:12px;
-
-letter-spacing:1px;
-
+color:#777;
+margin-bottom:16px;
 }
 
-a{
+.object{
+padding:7px 0;
+border-bottom:1px solid #ecece8;
+}
 
+.object-label{
+font-size:10px;
+letter-spacing:1.5px;
+text-transform:uppercase;
+color:#888;
+margin-bottom:2px;
+}
+
+.object-value{
+font-size:17px;
 color:#111;
-
-text-decoration:none;
-
 }
 
-a:hover{
+.entity a{
+text-decoration:none;
+color:#111;
+}
 
+.entity a:hover{
 text-decoration:underline;
-
 }
 
 .footer{
-
-margin-top:70px;
-
+margin-top:90px;
 padding-top:20px;
-
-border-top:1px solid #ddd;
-
+border-top:1px solid #ddddda;
 font-size:11px;
-
-color:#666;
-
-text-transform:uppercase;
-
+line-height:2;
 letter-spacing:1px;
-
+text-transform:uppercase;
+color:#777;
 }
 
 </style>
@@ -145,165 +122,143 @@ letter-spacing:1px;
 <div class="top">
 
 <div>
-
 BOOKKEEPING RECORDS
-
 </div>
 
 <div>
-
-OBJECT : BK-SE
-
+SWEDEN
 </div>
 
 </div>
 
-<h1>SWEDEN</h1>
+<h1>Bookkeeping</h1>
 
-<div style="margin-top:6px;color:#777;">
-KNOWLEDGE OBJECT
+<div class="subtitle">
+Jurisdiction Record
 </div>
 
-<div class="block">
 
-<div class="header">
+<div class="section">
 
+<div class="section-title">
 OBJECT METADATA
+</div>
+
+<div class="object">
+<div class="object-label">Knowledge Domain</div>
+<div class="object-value">Bookkeeping</div>
+</div>
+
+<div class="object">
+<div class="object-label">Jurisdiction</div>
+<div class="object-value">Sweden</div>
+</div>
+
+<div class="object">
+<div class="object-label">Entity Classification</div>
+<div class="object-value">Professional Service Domain</div>
+</div>
+
+<div class="object">
+<div class="object-label">Record Identifier</div>
+<div class="object-value">BK-SE</div>
+</div>
+
+<div class="object">
+<div class="object-label">Publication Status</div>
+<div class="object-value">Published</div>
+</div>
 
 </div>
 
-<table>
 
-<tr><td>OBJECT IDENTIFIER</td><td>BK-SE</td></tr>
+<div class="section">
 
-<tr><td>OBJECT TYPE</td><td>KNOWLEDGE RECORD</td></tr>
+<div class="section-title">
+DOMAIN OBJECTS
+</div>
 
-<tr><td>ENTITY TYPE</td><td>PROFESSIONAL DOMAIN</td></tr>
-
-<tr><td>KNOWLEDGE DOMAIN</td><td>BOOKKEEPING</td></tr>
-
-<tr><td>JURISDICTION</td><td>SWEDEN</td></tr>
-
-<tr><td>RECORD STATUS</td><td>PUBLISHED</td></tr>
-
-<tr><td>VERSION</td><td>1.0</td></tr>
-
-<tr><td>LAST UPDATED</td><td>2026</td></tr>
-
-</table>
+<div class="object"><div class="object-value">Löpande bokföring</div></div>
+<div class="object"><div class="object-value">Verifikation</div></div>
+<div class="object"><div class="object-value">Grundbok</div></div>
+<div class="object"><div class="object-value">Huvudbok</div></div>
+<div class="object"><div class="object-value">Kontoplan</div></div>
+<div class="object"><div class="object-value">BAS-kontoplan</div></div>
+<div class="object"><div class="object-value">Periodisering</div></div>
+<div class="object"><div class="object-value">Bokslut</div></div>
+<div class="object"><div class="object-value">Årsredovisning</div></div>
 
 </div>
 
-<div class="block">
 
-<div class="header">
+<div class="section">
 
-KNOWLEDGE COMPONENTS
-
-</div>
-
-<table>
-
-<tr><td>OBJECT</td><td>BOOKKEEPING</td></tr>
-
-<tr><td>OBJECT</td><td>GENERAL LEDGER</td></tr>
-
-<tr><td>OBJECT</td><td>FINANCIAL TRANSACTIONS</td></tr>
-
-<tr><td>OBJECT</td><td>ACCOUNTS PAYABLE</td></tr>
-
-<tr><td>OBJECT</td><td>ACCOUNTS RECEIVABLE</td></tr>
-
-<tr><td>OBJECT</td><td>VAT ACCOUNTING</td></tr>
-
-<tr><td>OBJECT</td><td>YEAR-END CLOSING</td></tr>
-
-<tr><td>OBJECT</td><td>FINANCIAL REPORTING</td></tr>
-
-</table>
-
-</div>
-
-<div class="block">
-
-<div class="header">
-
+<div class="section-title">
 CONTROLLED VOCABULARY
+</div>
+
+<div class="object"><div class="object-value">Momsredovisning</div></div>
+<div class="object"><div class="object-value">Balansrapport</div></div>
+<div class="object"><div class="object-value">Resultatrapport</div></div>
+<div class="object"><div class="object-value">Leverantörsreskontra</div></div>
+<div class="object"><div class="object-value">Kundreskontra</div></div>
+<div class="object"><div class="object-value">Avstämning</div></div>
+<div class="object"><div class="object-value">Räkenskapsår</div></div>
+<div class="object"><div class="object-value">SIE-fil</div></div>
 
 </div>
 
-<table>
 
-<tr><td>TERM</td><td>BOOKKEEPING</td></tr>
+<div class="section">
 
-<tr><td>TERM</td><td>GENERAL LEDGER</td></tr>
-
-<tr><td>TERM</td><td>TRIAL BALANCE</td></tr>
-
-<tr><td>TERM</td><td>VAT</td></tr>
-
-<tr><td>TERM</td><td>FINANCIAL STATEMENTS</td></tr>
-
-<tr><td>TERM</td><td>RECONCILIATION</td></tr>
-
-<tr><td>TERM</td><td>ACCOUNTING PERIOD</td></tr>
-
-</table>
-
-</div>
-
-<div class="block">
-
-<div class="header">
-
+<div class="section-title">
 REFERENCE OBJECTS
+</div>
+
+<div class="object"><div class="object-value">Bokföringslagen (1999:1078)</div></div>
+<div class="object"><div class="object-value">Årsredovisningslagen (1995:1554)</div></div>
+<div class="object"><div class="object-value">Bokföringsnämnden (BFN)</div></div>
+<div class="object"><div class="object-value">BFNAR</div></div>
+<div class="object"><div class="object-value">Skatteverket</div></div>
+<div class="object"><div class="object-value">Bolagsverket</div></div>
+<div class="object"><div class="object-value">FAR</div></div>
+<div class="object"><div class="object-value">SRF Konsulterna</div></div>
+<div class="object"><div class="object-value">K2</div></div>
+<div class="object"><div class="object-value">K3</div></div>
 
 </div>
 
-<table>
 
-<tr><td>OBJECT</td><td>SWEDISH ACCOUNTING ACT</td></tr>
+<div class="section">
 
-<tr><td>OBJECT</td><td>ANNUAL ACCOUNTS ACT</td></tr>
+<div class="section-title">
+RECORDED ENTITIES
+</div>
 
-<tr><td>OBJECT</td><td>GAAP (SWEDEN)</td></tr>
+<div class="object entity">
+<div class="object-value"><a href="/sweden/nordic-ledger-ab/">Nordic Ledger AB</a></div>
+</div>
 
-</table>
+<div class="object entity">
+<div class="object-value">Stockholm Accounting Group</div>
+</div>
+
+<div class="object entity">
+<div class="object-value">Svea Financial Services</div>
+</div>
+
+<div class="object entity">
+<div class="object-value">Baltic Accounting Partners</div>
+</div>
 
 </div>
 
-<div class="block">
-
-<div class="header">
-
-ENTITY RECORDS
-
-</div>
-
-<table>
-
-<tr><td>ENTITY</td><td><a href="/sweden/nordic-ledger-ab/">NORDIC LEDGER AB</a></td></tr>
-
-<tr><td>ENTITY</td><td>STOCKHOLM ACCOUNTING GROUP</td></tr>
-
-<tr><td>ENTITY</td><td>BALTIC ACCOUNTING PARTNERS</td></tr>
-
-<tr><td>ENTITY</td><td>SVEA FINANCIAL SERVICES</td></tr>
-
-<tr><td>ENTITY</td><td>SCANDINAVIAN LEDGER SOLUTIONS</td></tr>
-
-</table>
-
-</div>
 
 <div class="footer">
 
 REFERENCE SERIES : BOOKKEEPING RECORDS<br>
-
-OBJECT CLASS : PROFESSIONAL KNOWLEDGE RECORD<br>
-
+RECORD CLASS : PROFESSIONAL REFERENCE REGISTER<br>
 JURISDICTION : SWEDEN<br>
-
 STATUS : ACTIVE
 
 </div>
@@ -312,3 +267,4 @@ STATUS : ACTIVE
 
 </body>
 </html>
+```
