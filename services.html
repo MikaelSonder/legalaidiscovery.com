@@ -2,8 +2,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>AI Representation | Legal AI Discovery</title>
 
 <style>
@@ -18,17 +20,16 @@ body{
 background:#090909;
 color:#f2f2f2;
 font-family:Inter,system-ui,sans-serif;
-line-height:1.8;
+line-height:1.6;
 }
 
 .container{
-width:90%;
-max-width:920px;
-margin:0 auto;
+width:min(92%,1180px);
+margin:auto;
 }
 
 header{
-border-bottom:1px solid #171717;
+border-bottom:1px solid #181818;
 }
 
 .nav{
@@ -42,13 +43,13 @@ padding:28px 0;
 font-size:13px;
 letter-spacing:3px;
 text-transform:uppercase;
-color:#d8d8d8;
 font-weight:600;
+color:#d9d9d9;
 }
 
 .menu{
 display:flex;
-gap:20px;
+gap:22px;
 }
 
 .menu a{
@@ -58,111 +59,239 @@ font-size:14px;
 }
 
 .hero{
-padding:110px 0 90px;
+
+min-height:88vh;
+
+display:flex;
+align-items:center;
+
 }
 
-.hero h1{
-font-size:60px;
-font-weight:500;
-line-height:1.05;
-margin-bottom:28px;
+.hero-inner{
+
+max-width:900px;
+
 }
 
-.hero p{
-max-width:720px;
-font-size:22px;
-color:#9e9e9e;
-}
+.eyebrow{
 
-.divider{
-border-top:1px solid #171717;
-}
-
-.section{
-padding:90px 0;
-}
-
-.label{
 font-size:12px;
 letter-spacing:3px;
 text-transform:uppercase;
-color:#666;
-margin-bottom:30px;
+color:#6d6d6d;
+margin-bottom:24px;
+
 }
 
-.section h2{
-font-size:34px;
+.hero h1{
+
+font-size:82px;
 font-weight:500;
-margin-bottom:22px;
+line-height:.95;
+letter-spacing:-2px;
+margin-bottom:34px;
+
 }
 
-.section p{
-font-size:19px;
-color:#b2b2b2;
-max-width:760px;
-margin-bottom:26px;
-}
+.hero p{
 
-.process{
-margin-top:40px;
-border-top:1px solid #1b1b1b;
-}
+font-size:24px;
+line-height:1.5;
+max-width:720px;
+color:#a2a2a2;
 
-.step{
-display:flex;
-justify-content:space-between;
-padding:22px 0;
-border-bottom:1px solid #1b1b1b;
-font-size:18px;
-}
-
-.step span:last-child{
-color:#6f6f6f;
-}
-
-.list{
-margin-top:35px;
-}
-
-.list div{
-padding:16px 0;
-border-bottom:1px solid #1b1b1b;
-color:#d5d5d5;
 }
 
 .cta{
-padding:110px 0;
-text-align:left;
-}
 
-.cta h2{
-font-size:42px;
-font-weight:500;
-margin-bottom:22px;
-}
+margin-top:55px;
 
-.cta p{
-max-width:700px;
-color:#aaaaaa;
-font-size:20px;
-margin-bottom:45px;
-}
-
-.button{
 display:inline-block;
-padding:16px 30px;
+
+padding:18px 32px;
+
+background:#fff;
+
+color:#000;
+
 border-radius:999px;
-background:#5b7fff;
-color:#fff;
+
 text-decoration:none;
+
 font-weight:600;
+
+transition:.25s;
+
 }
 
-footer{
-border-top:1px solid #171717;
-padding:70px 0;
-color:#666;
-font-size:14px;
+.cta:hover{
+
+transform:translateY(-2px);
+
+}
+
+.divider{
+
+border-top:1px solid #1a1a1a;
+
+}
+
+.section{
+
+padding:120px 0;
+
+}
+
+.center{
+
+text-align:center;
+
+}
+
+.center h2{
+
+font-size:58px;
+font-weight:500;
+line-height:1.08;
+margin-bottom:24px;
+
+}
+
+.center p{
+
+font-size:22px;
+color:#9d9d9d;
+max-width:760px;
+margin:auto;
+
+}
+
+.twocol{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:60px;
+
+margin-top:90px;
+
+}
+
+.panel{
+
+border:1px solid #202020;
+
+border-radius:24px;
+
+padding:45px;
+
+background:#101010;
+
+}
+
+.panel h3{
+
+font-size:32px;
+font-weight:500;
+margin-bottom:30px;
+
+}
+
+.panel ul{
+
+list-style:none;
+
+}
+
+.panel li{
+
+padding:18px 0;
+
+border-bottom:1px solid #202020;
+
+color:#bdbdbd;
+
+font-size:18px;
+
+}
+
+.panel li:last-child{
+
+border:none;
+
+}
+
+.good{
+
+background:#111827;
+
+border-color:#25304d;
+
+}
+
+.good h3{
+
+color:#fff;
+
+}
+
+.statement{
+
+padding:170px 0;
+
+text-align:center;
+
+}
+
+.statement h2{
+
+font-size:88px;
+
+line-height:.95;
+
+font-weight:500;
+
+letter-spacing:-2px;
+
+}
+
+.statement p{
+
+margin-top:30px;
+
+font-size:24px;
+
+color:#8e8e8e;
+
+}
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:54px;
+
+}
+
+.center h2{
+
+font-size:42px;
+
+}
+
+.statement h2{
+
+font-size:52px;
+
+}
+
+.twocol{
+
+grid-template-columns:1fr;
+
+}
+
 }
 
 </style>
@@ -176,12 +305,17 @@ font-size:14px;
 <div class="container nav">
 
 <div class="logo">
+
 LEGAL AI DISCOVERY
+
 </div>
 
 <div class="menu">
+
 <a href="index.html">Research</a>
+
 <a href="services.html">Services</a>
+
 </div>
 
 </div>
@@ -190,219 +324,37 @@ LEGAL AI DISCOVERY
 
 <section class="hero">
 
-<div class="container">
+<div class="container hero-inner">
+
+<div class="eyebrow">
+
+AI REPRESENTATION
+
+</div>
 
 <h1>
-AI Representation
+
+Your AI representation.
+
+<br>
+
+Taken care of.
+
 </h1>
 
 <p>
 
-A standardized process for documenting and establishing how your law firm is represented across emerging AI environments.
+AI is becoming a new channel for discovering legal expertise.
+
+The question is no longer whether your firm appears.
+
+It's whether your firm is represented the way you intend.
 
 </p>
 
-</div>
+<a href="#" class="cta">
 
-</section>
-
-<div class="divider"></div>
-
-<section class="section">
-
-<div class="container">
-
-<div class="label">
-
-Overview
-
-</div>
-
-<h2>
-
-What Is AI Representation?
-
-</h2>
-
-<p>
-
-AI systems increasingly rely on publicly available information when identifying, interpreting and recommending professional expertise.
-
-AI Representation is a structured process for documenting how your law firm is presented across these environments.
-
-</p>
-
-<p>
-
-Rather than focusing on search rankings, the objective is to establish a clear, consistent and well-structured representation of your firm's expertise, positioning and operating markets.
-
-</p>
-
-</div>
-
-</section>
-
-<div class="divider"></div>
-
-<section class="section">
-
-<div class="container">
-
-<div class="label">
-
-Method
-
-</div>
-
-<h2>
-
-The Representation Process
-
-</h2>
-
-<div class="process">
-
-<div class="step">
-
-<span>Firm Information</span>
-
-<span>01</span>
-
-</div>
-
-<div class="step">
-
-<span>Representation Assessment</span>
-
-<span>02</span>
-
-</div>
-
-<div class="step">
-
-<span>Representation Standardization</span>
-
-<span>03</span>
-
-</div>
-
-<div class="step">
-
-<span>Representation Record</span>
-
-<span>04</span>
-
-</div>
-
-<div class="step">
-
-<span>Registration Complete</span>
-
-<span>05</span>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<div class="divider"></div>
-
-<section class="section">
-
-<div class="container">
-
-<div class="label">
-
-Included
-
-</div>
-
-<h2>
-
-What's Included
-
-</h2>
-
-<div class="list">
-
-<div>AI Representation Assessment</div>
-
-<div>Canonical Firm Description</div>
-
-<div>Practice Area Classification</div>
-
-<div>Operating Market Classification</div>
-
-<div>Representation Record</div>
-
-<div>Public Registration</div>
-
-</div>
-
-</div>
-
-</section>
-
-<div class="divider"></div>
-
-<section class="section">
-
-<div class="container">
-
-<div class="label">
-
-Delivery
-
-</div>
-
-<h2>
-
-One Standardized Process
-
-</h2>
-
-<p>
-
-AI Representation is delivered as a one-time engagement.
-
-No subscriptions.
-
-No ongoing retainers.
-
-No recurring management.
-
-Once completed, your firm's representation has been documented, standardized and formally established.
-
-</p>
-
-</div>
-
-</section>
-
-<div class="divider"></div>
-
-<section class="cta">
-
-<div class="container">
-
-<h2>
-
-Establish Your AI Representation
-
-</h2>
-
-<p>
-
-Apply the Legal AI Discovery Framework to your own law firm through a standardized AI Representation process.
-
-</p>
-
-<a href="#" class="button">
-
-Begin Representation
+Become AI Representation Registered™
 
 </a>
 
@@ -410,11 +362,497 @@ Begin Representation
 
 </section>
 
-<footer>
+<div class="divider"></div>
+
+<section class="section">
 
 <div class="container">
 
+<div class="center">
+
+<h2>
+
+One less thing to worry about.
+
+</h2>
+
+<p>
+
+Your partners already have enough to think about.
+
+Clients.
+
+Recruitment.
+
+Business development.
+
+Compliance.
+
+Reputation.
+
+AI representation shouldn't become another responsibility.
+
+It should simply be taken care of.
+
+</p>
+
+</div>
+
+<div class="twocol">
+
+<div class="panel">
+
+<h3>
+
+Without AI Representation
+
+</h3>
+
+<ul>
+
+<li>Different descriptions across different sources</li>
+
+<li>Inconsistent positioning</li>
+
+<li>No canonical representation</li>
+
+<li>Unclear practice area signals</li>
+
+<li>No one owns the process</li>
+
+<li>Another thing to think about</li>
+
+</ul>
+
+</div>
+
+<div class="panel good">
+
+<h3>
+
+AI Representation Registered™
+
+</h3>
+
+<ul>
+
+<li>One canonical representation</li>
+
+<li>Clear legal positioning</li>
+
+<li>Structured firm identity</li>
+
+<li>Consistent practice area definitions</li>
+
+<li>Public Representation Record</li>
+
+<li>Done once. Not managed forever.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<section class="statement">
+
+<div class="container">
+
+<h2>
+
+One order.
+
+<br>
+
+One process.
+
+<br>
+
+One record.
+
+<br>
+
+Done.
+
+</h2>
+
+<p>
+
+That's the entire idea.
+
+</p>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+```html
+
+<section class="section">
+
+<div class="container">
+
+<div class="center">
+
+<h2>
+
+Your firm's AI Representation Record.
+
+</h2>
+
+<p>
+
+The outcome isn't a report.
+
+It's an established representation.
+
+A permanent public record documenting how your law firm is represented.
+
+</p>
+
+</div>
+
+<div style="margin-top:80px;background:#f5f5f5;border-radius:24px;padding:60px;color:#111;max-width:860px;margin-left:auto;margin-right:auto;">
+
+<div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#777;margin-bottom:20px;">
+
+AI REPRESENTATION RECORD
+
+</div>
+
+<h3 style="font-size:44px;font-weight:500;margin-bottom:40px;">
+
+AIR-000184
+
+</h3>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+
+<div>
+
+<strong>Status</strong>
+
+<br><br>
+
+Established
+
+</div>
+
+<div>
+
+<strong>Version</strong>
+
+<br><br>
+
+1.0
+
+</div>
+
+<div>
+
+<strong>Classification</strong>
+
+<br><br>
+
+Legal Services
+
+</div>
+
+<div>
+
+<strong>Representation</strong>
+
+<br><br>
+
+Active
+
+</div>
+
+</div>
+
+<hr style="margin:40px 0;border:none;border-top:1px solid #ddd;">
+
+<p style="color:#555;line-height:1.8;">
+
+This Representation Record documents the canonical AI representation established for the organization, including practice area positioning, operating markets and standardized firm identity.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+
+<div class="container">
+
+<div class="center">
+
+<h2>
+
+What you receive.
+
+</h2>
+
+<p>
+
+Everything required to establish a clear, documented and consistent AI representation.
+
+Nothing you need to maintain afterwards.
+
+</p>
+
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:28px;margin-top:70px;">
+
+<div class="panel">
+
+<h3>Canonical Representation</h3>
+
+<p style="color:#a5a5a5;">
+
+A standardized description of your firm's identity, expertise and positioning.
+
+</p>
+
+</div>
+
+<div class="panel">
+
+<h3>Practice Area Structure</h3>
+
+<p style="color:#a5a5a5;">
+
+Clear classification of your firm's legal expertise.
+
+</p>
+
+</div>
+
+<div class="panel">
+
+<h3>Operating Markets</h3>
+
+<p style="color:#a5a5a5;">
+
+Documented jurisdictions and geographic markets.
+
+</p>
+
+</div>
+
+<div class="panel">
+
+<h3>Representation Record</h3>
+
+<p style="color:#a5a5a5;">
+
+A public AI Representation Record documenting the established representation.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<section class="section">
+
+<div class="container">
+
+<div class="center">
+
+<h2>
+
+Three steps.
+
+</h2>
+
+<p>
+
+That's all.
+
+</p>
+
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:35px;margin-top:80px;">
+
+<div class="panel">
+
+<div style="font-size:56px;color:#555;margin-bottom:30px;">
+
+01
+
+</div>
+
+<h3>
+
+Submit
+
+</h3>
+
+<p style="color:#9e9e9e;">
+
+Provide your firm's website.
+
+</p>
+
+</div>
+
+<div class="panel">
+
+<div style="font-size:56px;color:#555;margin-bottom:30px;">
+
+02
+
+</div>
+
+<h3>
+
+Establish
+
+</h3>
+
+<p style="color:#9e9e9e;">
+
+We establish your AI representation using the AI Discovery Framework.
+
+</p>
+
+</div>
+
+<div class="panel">
+
+<div style="font-size:56px;color:#555;margin-bottom:30px;">
+
+03
+
+</div>
+
+<h3>
+
+Registered
+
+</h3>
+
+<p style="color:#9e9e9e;">
+
+Your Representation Record becomes available.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+```html id="qx81wb"
+
+<section class="section">
+
+<div class="container">
+
+<div class="center">
+
+<h2>
+
+Stop worrying about AI representation.
+
+</h2>
+
+<p>
+
+AI Representation Registered™ is designed for one purpose:
+
+giving your firm the confidence that its AI representation has been established, documented and taken care of.
+
+</p>
+
+<a href="#" class="cta" style="margin-top:55px;">
+
+Become AI Representation Registered™
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<footer>
+
+<div class="container" style="padding:60px 0;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:30px;">
+
+<div>
+
+<div style="font-size:13px;letter-spacing:3px;text-transform:uppercase;color:#d8d8d8;margin-bottom:18px;">
+
+LEGAL AI DISCOVERY
+
+</div>
+
+<p style="max-width:520px;color:#7d7d7d;line-height:1.8;">
+
+Legal AI Discovery researches how law firms are discovered, understood and recommended across AI environments.
+
+Our services apply the same framework to establish a firm's AI representation.
+
+</p>
+
+</div>
+
+<div style="text-align:right;">
+
+<a href="index.html" style="display:block;color:#888;text-decoration:none;margin-bottom:12px;">
+
+Research
+
+</a>
+
+<a href="services.html" style="display:block;color:#888;text-decoration:none;">
+
+Services
+
+</a>
+
+</div>
+
+</div>
+
+<div style="border-top:1px solid #1a1a1a;">
+
+<div class="container" style="padding:24px 0;color:#666;font-size:14px;">
+
 © Legal AI Discovery
+
+</div>
 
 </div>
 
@@ -423,4 +861,3 @@ Begin Representation
 </body>
 
 </html>
-```
