@@ -1,0 +1,347 @@
+/*
+==========================================================
+PROFESSIONAL ONTOLOGY REGISTRY (POR)
+Registry Design Language (RDL)
+Version: 1.0
+==========================================================
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    font-size:16px;
+}
+
+body{
+
+    background:#ffffff;
+
+    color:#111111;
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    font-size:14px;
+
+    line-height:1.45;
+
+    padding:50px;
+
+}
+
+
+/*==========================================================
+LAYOUT
+==========================================================*/
+
+.registry-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+/*==========================================================
+HEADER
+==========================================================*/
+
+.registry-header{
+
+    border-top:3px solid #222;
+
+    border-bottom:1px solid #999;
+
+    padding:18px 0 22px;
+
+    margin-bottom:35px;
+
+}
+
+.registry-metadata{
+
+    font-family:Consolas,monospace;
+
+    font-size:12px;
+
+    color:#666;
+
+    line-height:1.5;
+
+    letter-spacing:.6px;
+
+}
+
+.registry-title{
+
+    margin-top:14px;
+
+    margin-bottom:4px;
+
+    font-size:52px;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+}
+
+.registry-subtitle{
+
+    color:#666;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+}
+
+
+/*==========================================================
+OBJECT POSITION
+==========================================================*/
+
+.registry-tree{
+
+    border:1px solid #cfcfcf;
+
+    background:#fafafa;
+
+    padding:18px;
+
+    margin-bottom:40px;
+
+    font-family:Consolas,monospace;
+
+    font-size:13px;
+
+    line-height:1.7;
+
+}
+
+
+/*==========================================================
+GRID
+==========================================================*/
+
+.registry-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+
+    margin-bottom:45px;
+
+}
+
+
+/*==========================================================
+PANELS
+==========================================================*/
+
+.registry-panel{
+
+    border:1px solid #cfcfcf;
+
+    background:#ffffff;
+
+}
+
+.registry-panel-title{
+
+    background:#efefef;
+
+    border-bottom:1px solid #cfcfcf;
+
+    padding:8px 12px;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+}
+
+.registry-panel-content{
+
+    padding:14px;
+
+}
+
+.registry-panel-content ul{
+
+    padding-left:18px;
+
+}
+
+.registry-panel-content li{
+
+    margin:5px 0;
+
+}
+
+
+/*==========================================================
+SECTIONS
+==========================================================*/
+
+.registry-section{
+
+    margin-top:45px;
+
+}
+
+.registry-section-title{
+
+    border-bottom:2px solid #333;
+
+    padding-bottom:7px;
+
+    margin-bottom:18px;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+}
+
+
+/*==========================================================
+TABLES
+==========================================================*/
+
+.registry-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.registry-table td{
+
+    padding:10px;
+
+    border-bottom:1px solid #e2e2e2;
+
+    vertical-align:top;
+
+}
+
+.registry-table td:first-child{
+
+    width:260px;
+
+    font-weight:bold;
+
+    color:#555;
+
+    letter-spacing:1px;
+
+}
+
+
+/*==========================================================
+STATUS BADGES
+==========================================================*/
+
+.registry-badge{
+
+    display:inline-block;
+
+    padding:2px 8px;
+
+    border:1px solid #999;
+
+    font-size:11px;
+
+    letter-spacing:1px;
+
+    margin-right:6px;
+
+}
+
+
+/*==========================================================
+DIVIDER
+==========================================================*/
+
+.registry-divider{
+
+    border-top:1px solid #d8d8d8;
+
+    margin:40px 0;
+
+}
+
+
+/*==========================================================
+FOOTER
+==========================================================*/
+
+.registry-footer{
+
+    margin-top:70px;
+
+    border-top:2px solid #222;
+
+    padding-top:16px;
+
+    font-family:Consolas,monospace;
+
+    font-size:12px;
+
+    color:#666;
+
+    line-height:1.7;
+
+}
+
+
+/*==========================================================
+LINKS
+==========================================================*/
+
+a{
+
+    color:#111;
+
+    text-decoration:none;
+
+}
+
+a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+/*==========================================================
+PRINT
+==========================================================*/
+
+@media print{
+
+body{
+
+    padding:20px;
+
+}
+
+.registry-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
