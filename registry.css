@@ -1,0 +1,305 @@
+  /*
+======================================================================
+
+PROFESSIONAL ONTOLOGY REGISTRY
+Registry Design Language (RDL)
+
+Version........1.0
+Author.........Your Name
+
+======================================================================
+*/
+
+
+/*=====================================================================
+  GLOBAL
+=====================================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    font-size:16px;
+}
+
+body{
+
+    background:#ffffff;
+
+    color:#111111;
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    line-height:1.5;
+
+    padding:50px;
+
+}
+
+
+/*=====================================================================
+  LAYOUT
+=====================================================================*/
+
+.container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+/*=====================================================================
+  HEADER
+=====================================================================*/
+
+.registry-header{
+
+    border-top:3px solid #222;
+
+    border-bottom:1px solid #999;
+
+    padding:20px 0;
+
+    margin-bottom:35px;
+
+}
+
+.registry-title{
+
+    font-size:48px;
+
+    letter-spacing:2px;
+
+    font-weight:bold;
+
+    margin:12px 0 6px 0;
+
+}
+
+.registry-subtitle{
+
+    color:#666;
+
+    letter-spacing:2px;
+
+    font-size:13px;
+
+}
+
+
+/*=====================================================================
+  METADATA
+=====================================================================*/
+
+.registry-metadata{
+
+    font-family:Consolas,monospace;
+
+    font-size:12px;
+
+    color:#666;
+
+    line-height:1.55;
+
+    letter-spacing:.6px;
+
+}
+
+
+/*=====================================================================
+  GRID
+=====================================================================*/
+
+.registry-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+
+}
+
+
+/*=====================================================================
+  PANEL
+=====================================================================*/
+
+.registry-panel{
+
+    border:1px solid #cfcfcf;
+
+    background:#fff;
+
+}
+
+.registry-panel-title{
+
+    background:#efefef;
+
+    border-bottom:1px solid #cfcfcf;
+
+    padding:9px 12px;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+}
+
+.registry-panel-content{
+
+    padding:14px;
+
+}
+
+
+/*=====================================================================
+  LISTS
+=====================================================================*/
+
+.registry-panel ul{
+
+    padding-left:18px;
+
+}
+
+.registry-panel li{
+
+    margin:6px 0;
+
+}
+
+
+/*=====================================================================
+  SECTION
+=====================================================================*/
+
+.registry-section{
+
+    margin-top:45px;
+
+}
+
+.registry-section-title{
+
+    border-bottom:2px solid #333;
+
+    padding-bottom:8px;
+
+    margin-bottom:20px;
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+}
+
+
+/*=====================================================================
+  TABLE
+=====================================================================*/
+
+.registry-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.registry-table td{
+
+    padding:10px;
+
+    border-bottom:1px solid #e3e3e3;
+
+    vertical-align:top;
+
+}
+
+.registry-table td:first-child{
+
+    width:260px;
+
+    color:#555;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+}
+
+
+/*=====================================================================
+  OBJECT TREE
+=====================================================================*/
+
+.registry-tree{
+
+    border:1px solid #cfcfcf;
+
+    background:#fafafa;
+
+    padding:18px;
+
+    font-family:Consolas,monospace;
+
+    font-size:13px;
+
+    margin-bottom:35px;
+
+    line-height:1.7;
+
+}
+
+
+/*=====================================================================
+  BADGES
+=====================================================================*/
+
+.registry-badge{
+
+    display:inline-block;
+
+    border:1px solid #999;
+
+    padding:2px 8px;
+
+    font-size:11px;
+
+    letter-spacing:1px;
+
+    margin-right:6px;
+
+}
+
+
+/*=====================================================================
+  FOOTER
+=====================================================================*/
+
+.registry-footer{
+
+    margin-top:60px;
+
+    border-top:2px solid #222;
+
+    padding-top:18px;
+
+    font-family:Consolas,monospace;
+
+    font-size:12px;
+
+    color:#666;
+
+    line-height:1.7;
+
+}
