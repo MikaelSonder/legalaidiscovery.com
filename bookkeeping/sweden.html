@@ -30,7 +30,7 @@ Checksum..........................0xA71392D4
 <section class="registry-section">
 <div class="registry-section-title">OBJECT DEFINITION</div>
 <table class="registry-table">
-<tr><td>DEFINITION</td><td>Professional function responsible for recording, classifying, reconciling and preserving financial transactions and räkenskapsinformation in accordance with Swedish accounting legislation and generally accepted accounting principles.</td></tr>
+<tr><td>DEFINITION</td><td>The legally governed professional function responsible for the complete, timely and traceable recording, classification, verification, preservation and retrieval of accounting information for entities subject to Swedish bookkeeping requirements, in accordance with Bokföringslagen, Årsredovisningslagen and generally accepted accounting practice.</td></tr>
 <tr><td>OBJECT</td><td>Bookkeeping</td></tr>
 <tr><td>OBJECT TYPE</td><td>Professional Function</td></tr>
 <tr><td>CLASSIFICATION</td><td>Accounting Function</td></tr>
@@ -58,10 +58,10 @@ NODE STATUS...............ACTIVE
 <div class="registry-panel-title">PURPOSE</div>
 <div class="registry-panel-content">
 <ul>
-<li>Maintain legally required accounting records</li>
-<li>Provide financial traceability</li>
-<li>Support statutory reporting</li>
-<li>Preserve räkenskapsinformation and commercial evidence</li>
+<li>Fulfil statutory bookkeeping obligations</li>
+<li>Ensure complete and verifiable financial traceability</li>
+<li>Support tax reporting, annual accounts and audit readiness</li>
+<li>Preserve räkenskapsinformation and maintain a durable audit trail</li>
 </ul>
 </div>
 </div>
@@ -70,11 +70,14 @@ NODE STATUS...............ACTIVE
 <div class="registry-panel-title">CORE COMPETENCE</div>
 <div class="registry-panel-content">
 <ul>
+<li>Löpande bokföring</li>
 <li>Transaction Recording</li>
+<li>Verifikation Management</li>
 <li>Ledger Maintenance</li>
 <li>Reconciliation</li>
-<li>VAT Accounting</li>
+<li>Periodisation</li>
 <li>Year-End Closing</li>
+<li>Archiving</li>
 </ul>
 </div>
 </div>
@@ -87,6 +90,7 @@ NODE STATUS...............ACTIVE
 <li>Commercial Transparency</li>
 <li>Regulatory Compliance</li>
 <li>Auditability</li>
+<li>Document Preservation</li>
 </ul>
 </div>
 </div>
@@ -99,7 +103,10 @@ NODE STATUS...............ACTIVE
 <li>Receipts</li>
 <li>Bank Transactions</li>
 <li>Payroll Data</li>
+<li>Contracts</li>
 <li>Supporting Documentation</li>
+<li>System Logs</li>
+<li>Source Files</li>
 </ul>
 </div>
 </div>
@@ -110,10 +117,12 @@ NODE STATUS...............ACTIVE
 <ul>
 <li>Recording</li>
 <li>Classification</li>
-<li>Reconciliation</li>
 <li>Verification</li>
-<li>Verifikationshantering</li>
+<li>Reconciliation</li>
+<li>Periodisation</li>
+<li>Retention Control</li>
 <li>Archiving</li>
+<li>Retrieval</li>
 </ul>
 </div>
 </div>
@@ -123,9 +132,12 @@ NODE STATUS...............ACTIVE
 <div class="registry-panel-content">
 <ul>
 <li>General Ledger</li>
-<li>VAT Return</li>
+<li>Subsidiary Ledgers</li>
 <li>Trial Balance</li>
-<li>Annual Accounts</li>
+<li>VAT Return</li>
+<li>Bookkeeping Reports</li>
+<li>Closing Entries</li>
+<li>Annual Accounts Support Data</li>
 </ul>
 </div>
 </div>
@@ -137,26 +149,26 @@ NODE STATUS...............ACTIVE
 <table class="registry-table">
 <tr><td>PARENT OBJECT</td><td>Accounting</td></tr>
 <tr><td>CHILD OBJECTS</td><td>None</td></tr>
-<tr><td>RELATED OBJECTS</td><td>VAT • Payroll • Financial Reporting • Audit</td></tr>
+<tr><td>RELATED OBJECTS</td><td>VAT • Payroll • Financial Reporting • Audit • Tax Compliance</td></tr>
 </table>
 </section>
 
 <section class="registry-section">
 <div class="registry-section-title">OBJECT MODEL</div>
 <table class="registry-table">
-<tr><td>RECEIVES FROM</td><td>Sales • Purchasing • Banking • Payroll • Management</td></tr>
-<tr><td>DELIVERS TO</td><td>Management • Auditor • Skatteverket • Banks • Owners</td></tr>
-<tr><td>PROFESSIONAL JUDGEMENT</td><td>Posting • Classification • Documentation • Reconciliation</td></tr>
-<tr><td>CANNOT DECIDE</td><td>Audit Opinion • Legal Judgement • Tax Litigation</td></tr>
-<tr><td>DEPENDENCIES</td><td>Bokföringslagen • Årsredovisningslagen • BFNAR • ERP • Documentation</td></tr>
-<tr><td>FAILURE CONSEQUENCES</td><td>VAT Errors • Financial Misstatement • Regulatory Penalties • Loss of Traceability</td></tr>
+<tr><td>RECEIVES FROM</td><td>Sales • Purchasing • Banking • Payroll • Management • External Counterparties</td></tr>
+<tr><td>DELIVERS TO</td><td>Management • Auditor • Skatteverket • Banks • Owners • Registrar Authorities</td></tr>
+<tr><td>PROFESSIONAL JUDGEMENT</td><td>Posting • Classification • Documentation • Reconciliation • Periodisation • Retention Assessment</td></tr>
+<tr><td>CANNOT DECIDE</td><td>Audit Opinion • Legal Judgement • Tax Litigation • Statutory Interpretation Beyond Applicable Guidance</td></tr>
+<tr><td>DEPENDENCIES</td><td>Bokföringslagen • Årsredovisningslagen • BFNAR • God redovisningssed • ERP • Documentation • Systemdokumentation</td></tr>
+<tr><td>FAILURE CONSEQUENCES</td><td>VAT Errors • Financial Misstatement • Regulatory Penalties • Loss of Traceability • Incomplete Räkenskapsinformation</td></tr>
 </table>
 </section>
 
 <section class="registry-section">
 <div class="registry-section-title">NORMATIVE FRAMEWORK</div>
 <table class="registry-table">
-<tr><td>LEGAL SOURCES</td><td>Bokföringslagen • Årsredovisningslagen • BFNAR • God redovisningssed</td></tr>
+<tr><td>LEGAL SOURCES</td><td>Bokföringslagen • Årsredovisningslagen • BFN:s vägledningar • God redovisningssed</td></tr>
 <tr><td>AUTHORITIES</td><td>Skatteverket • Bolagsverket • Bokföringsnämnden</td></tr>
 <tr><td>PROFESSIONAL BODIES</td><td>FAR • SRF Konsulterna</td></tr>
 </table>
@@ -165,9 +177,9 @@ NODE STATUS...............ACTIVE
 <section class="registry-section">
 <div class="registry-section-title">SWEDISH ACCOUNTING MODEL</div>
 <table class="registry-table">
-<tr><td>SWEDISH MODEL</td><td>Swedish bookkeeping is governed by the Bokföringslagen and developed through the principle of God redovisningssed, with guidance from Bokföringsnämnden.</td></tr>
-<tr><td>INTERNATIONAL POSITION</td><td>Produces financial information that is compliant with Swedish law and suitable for international business, banking and investment use.</td></tr>
-<tr><td>PROFESSIONAL EXPECTATION</td><td>Accuracy • Independence • Documentation • Transparency • Long-term Record Preservation</td></tr>
+<tr><td>SWEDISH MODEL</td><td>Swedish bookkeeping is a rule-based and principles-based system grounded in Bokföringslagen and developed through god redovisningssed, with detailed guidance from Bokföringsnämnden on bookkeeping, verifications, archiving, systemdokumentation and behandlingshistorik.</td></tr>
+<tr><td>INTERNATIONAL POSITION</td><td>Produces financial information that is legally compliant in Sweden while remaining suitable as a structured basis for banking, taxation, ownership reporting and cross-border business use.</td></tr>
+<tr><td>PROFESSIONAL EXPECTATION</td><td>Accuracy • Independence • Documentation • Traceability • Timeliness • Completeness • Long-term Record Preservation</td></tr>
 </table>
 </section>
 
