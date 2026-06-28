@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Debt Collection | Sweden | Professional Object Registry</title>
+<meta name="description" content="Professional Object Registry record for Debt Collection in Sweden. A structured, jurisdiction-specific reference object built for AI-era discoverability and professional positioning.">
 <style>
 :root{
   --bg:#f7f7f3;
@@ -13,8 +14,11 @@
   --line:#d8d8d1;
   --soft:#efefe8;
   --soft2:#fafaf6;
+  --accent:#111;
+  --accent2:#2b2b2b;
 }
 *{box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{
   margin:0;
   background:var(--bg);
@@ -22,10 +26,11 @@ body{
   font-family:Arial,Helvetica,sans-serif;
   line-height:1.45;
 }
+a{color:inherit}
 .registry-container{
-  max-width:1080px;
+  max-width:1100px;
   margin:24px auto;
-  padding:30px;
+  padding:28px;
   background:var(--paper);
   border:1px solid var(--line);
 }
@@ -41,10 +46,17 @@ body{
   letter-spacing:.02em;
   font-family:Consolas,Monaco,monospace;
 }
+.registry-hero{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:22px;
+  align-items:start;
+  margin-top:18px;
+}
 .registry-title{
-  margin:18px 0 2px;
-  font-size:58px;
-  line-height:.94;
+  margin:0 0 4px;
+  font-size:60px;
+  line-height:.93;
   letter-spacing:.02em;
 }
 .registry-subtitle{
@@ -52,13 +64,19 @@ body{
   letter-spacing:.24em;
   color:var(--muted);
 }
-.registry-badge-row{
+.registry-intro{
+  margin-top:14px;
+  font-size:15px;
+  color:#222;
+  max-width:760px;
+}
+.registry-badges{
   display:flex;
   flex-wrap:wrap;
   gap:10px;
   margin-top:16px;
 }
-.registry-badge{
+.badge{
   font-size:11px;
   border:1px solid var(--line);
   padding:6px 10px;
@@ -66,16 +84,52 @@ body{
   letter-spacing:.08em;
   text-transform:uppercase;
 }
-.registry-note{
-  margin-top:12px;
+.hero-card{
+  border:1px solid var(--line);
+  background:var(--soft2);
+  padding:18px;
+}
+.hero-card h2{
+  margin:0 0 10px;
+  font-size:12px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+}
+.hero-card p{
+  margin:0 0 10px;
+  font-size:13px;
+  color:#222;
+}
+.hero-card .micro{
   font-size:12px;
   color:var(--muted);
-  max-width:900px;
+}
+.cta-box{
+  margin-top:14px;
+  border:1px solid var(--line);
+  background:#fff;
+  padding:14px;
+}
+.cta-box .label{
+  font-size:11px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:#444;
+  margin-bottom:8px;
+}
+.cta-box .cta{
+  font-size:15px;
+  font-weight:bold;
+  margin-bottom:8px;
+}
+.cta-box .note{
+  font-size:12px;
+  color:var(--muted);
 }
 .registry-section{
   margin:24px 0;
 }
-.registry-section-title{
+.section-title{
   font-size:12px;
   letter-spacing:.22em;
   font-weight:bold;
@@ -100,7 +154,7 @@ body{
   letter-spacing:.16em;
   text-transform:uppercase;
 }
-.registry-tree{
+.tree{
   border:1px solid var(--line);
   padding:18px;
   margin:18px 0;
@@ -109,17 +163,17 @@ body{
   font-size:12px;
   white-space:pre-wrap;
 }
-.registry-grid{
+.grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:14px;
   margin:18px 0;
 }
-.registry-panel{
+.panel{
   border:1px solid var(--line);
   background:#fafaf7;
 }
-.registry-panel-title{
+.panel-title{
   padding:10px 12px;
   border-bottom:1px solid var(--line);
   font-size:12px;
@@ -127,26 +181,28 @@ body{
   font-weight:bold;
   background:#f4f4ee;
 }
-.registry-panel-content{
+.panel-content{
   padding:12px;
   font-size:13px;
 }
-.registry-panel-content ul{
+.panel-content ul{
   margin:0;
   padding-left:18px;
 }
-.registry-panel-content li{
+.panel-content li{
   margin:0 0 7px;
 }
-.registry-verify{
-  display:grid;
-  grid-template-columns:1.2fr .8fr;
-  gap:14px;
+.notice{
   border:1px solid var(--line);
-  padding:14px;
   background:#fcfcfa;
+  padding:16px;
 }
-.registry-pill{
+.notice-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+.pill{
   display:inline-block;
   margin:4px 8px 0 0;
   padding:5px 9px;
@@ -156,7 +212,7 @@ body{
   text-transform:uppercase;
   background:#fff;
 }
-.registry-footer{
+.footer{
   border-top:1px solid var(--ink);
   margin-top:30px;
   padding-top:12px;
@@ -169,12 +225,21 @@ body{
   font-size:12px;
   color:var(--muted);
 }
+.callout{
+  margin-top:14px;
+  padding:12px 14px;
+  background:#f9f9f4;
+  border-left:3px solid var(--ink);
+  font-size:13px;
+  color:#222;
+}
 @media (max-width:900px){
-  .registry-grid{grid-template-columns:1fr}
-  .registry-table td:first-child{width:145px}
-  .registry-title{font-size:42px}
-  .registry-verify{grid-template-columns:1fr}
   .registry-container{margin:0;padding:18px;border:none}
+  .registry-hero{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}
+  .notice-grid{grid-template-columns:1fr}
+  .registry-title{font-size:42px}
+  .registry-table td:first-child{width:145px}
 }
 </style>
 </head>
@@ -194,24 +259,43 @@ Domain............................Legal Services
 Subdomain.........................Debt Collection
 Checksum..........................0xC4B8F1A9</div>
 
+<div class="registry-hero">
+<div>
 <h1 class="registry-title">DEBT COLLECTION</h1>
 <div class="registry-subtitle">KINGDOM OF SWEDEN</div>
 
-<div class="registry-badge-row">
-<span class="registry-badge">Verified structure</span>
-<span class="registry-badge">Jurisdiction-specific</span>
-<span class="registry-badge">Source-backed</span>
-<span class="registry-badge">AI-readable registry record</span>
-<span class="registry-badge">Built for professional reference</span>
+<div class="registry-intro">
+This is a structured reference post for a regulated professional function in Sweden. It is designed to be easy for humans to scan, easy for AI systems to classify, and strong enough to feel like a central category anchor.
 </div>
 
-<div class="registry-note">
-This record is designed to present this professional function in a structured format that is easy for humans and AI systems to interpret, reference, and classify. It is intended as a reference object, not as legal advice or a promise of outcomes.
+<div class="registry-badges">
+<span class="badge">Verified structure</span>
+<span class="badge">Jurisdiction-specific</span>
+<span class="badge">Source-backed</span>
+<span class="badge">AI-readable registry record</span>
+<span class="badge">Category anchor</span>
+</div>
+
+<div class="callout">
+If you are a professional in this jurisdiction, this is the kind of record that should exist for your category. That is the core FOMO message.
+</div>
+</div>
+
+<div class="hero-card">
+<h2>Why this matters now</h2>
+<p>AI systems increasingly summarize, compare, and reference professional categories before a buyer ever reaches a website.</p>
+<p>That makes category visibility, structured identity, and jurisdiction-specific positioning more valuable than a generic brochure page.</p>
+<div class="cta-box">
+<div class="label">Publication opportunity</div>
+<div class="cta">Be listed as the reference object for your professional category.</div>
+<div class="note">Designed for experts who want to be visible early, before competitors establish the standard.</div>
+</div>
+</div>
 </div>
 </header>
 
 <section class="registry-section">
-<div class="registry-section-title">OBJECT DEFINITION</div>
+<div class="section-title">OBJECT DEFINITION</div>
 <table class="registry-table">
 <tr><td>DEFINITION</td><td>The regulated professional function responsible for pursuing payment of overdue claims, managing debtor communications, applying lawful collection measures, and supporting recovery through compliant pre-enforcement and enforcement processes under Swedish debt collection law, data protection rules, and applicable procedural law.</td></tr>
 <tr><td>OBJECT</td><td>Debt Collection</td></tr>
@@ -221,7 +305,7 @@ This record is designed to present this professional function in a structured fo
 </table>
 </section>
 
-<div class="registry-tree"><strong>OBJECT POSITION</strong>
+<div class="tree"><strong>OBJECT POSITION</strong>
 
 Business
 └── Operations
@@ -234,10 +318,10 @@ PARENT NODE...............Legal Recovery
 HIERARCHY DEPTH...........4
 NODE STATUS...............ACTIVE</div>
 
-<div class="registry-grid">
-<div class="registry-panel">
-<div class="registry-panel-title">PURPOSE</div>
-<div class="registry-panel-content">
+<div class="grid">
+<div class="panel">
+<div class="panel-title">PURPOSE</div>
+<div class="panel-content">
 <ul>
 <li>Recover overdue debts in a lawful and proportionate manner.</li>
 <li>Maintain fair, documented, and traceable creditor-debtor communication.</li>
@@ -247,9 +331,9 @@ NODE STATUS...............ACTIVE</div>
 </div>
 </div>
 
-<div class="registry-panel">
-<div class="registry-panel-title">CORE COMPETENCE</div>
-<div class="registry-panel-content">
+<div class="panel">
+<div class="panel-title">CORE COMPETENCE</div>
+<div class="panel-content">
 <ul>
 <li>Claim Review</li>
 <li>Demand Letter Issuance</li>
@@ -263,9 +347,9 @@ NODE STATUS...............ACTIVE</div>
 </div>
 </div>
 
-<div class="registry-panel">
-<div class="registry-panel-title">PROTECTED INTEREST</div>
-<div class="registry-panel-content">
+<div class="panel">
+<div class="panel-title">PROTECTED INTEREST</div>
+<div class="panel-content">
 <ul>
 <li>Creditor Recovery Rights</li>
 <li>Debtor Fair Treatment</li>
@@ -276,9 +360,9 @@ NODE STATUS...............ACTIVE</div>
 </div>
 </div>
 
-<div class="registry-panel">
-<div class="registry-panel-title">INPUTS</div>
-<div class="registry-panel-content">
+<div class="panel">
+<div class="panel-title">INPUTS</div>
+<div class="panel-content">
 <ul>
 <li>Unpaid Invoices</li>
 <li>Contract Data</li>
@@ -292,9 +376,9 @@ NODE STATUS...............ACTIVE</div>
 </div>
 </div>
 
-<div class="registry-panel">
-<div class="registry-panel-title">PROCESSES</div>
-<div class="registry-panel-content">
+<div class="panel">
+<div class="panel-title">PROCESSES</div>
+<div class="panel-content">
 <ul>
 <li>Claim Validation</li>
 <li>Reminder Escalation</li>
@@ -308,9 +392,9 @@ NODE STATUS...............ACTIVE</div>
 </div>
 </div>
 
-<div class="registry-panel">
-<div class="registry-panel-title">OUTPUTS</div>
-<div class="registry-panel-content">
+<div class="panel">
+<div class="panel-title">OUTPUTS</div>
+<div class="panel-content">
 <ul>
 <li>Debt Collection Demand</li>
 <li>Reminder Notices</li>
@@ -325,7 +409,7 @@ NODE STATUS...............ACTIVE</div>
 </div>
 
 <section class="registry-section">
-<div class="registry-section-title">OBJECT RELATIONS</div>
+<div class="section-title">OBJECT RELATIONS</div>
 <table class="registry-table">
 <tr><td>PARENT OBJECT</td><td>Legal Recovery</td></tr>
 <tr><td>CHILD OBJECTS</td><td>Consumer Debt Collection • Business Debt Collection • Enforcement Referral</td></tr>
@@ -334,7 +418,7 @@ NODE STATUS...............ACTIVE</div>
 </section>
 
 <section class="registry-section">
-<div class="registry-section-title">OBJECT MODEL</div>
+<div class="section-title">OBJECT MODEL</div>
 <table class="registry-table">
 <tr><td>RECEIVES FROM</td><td>Invoicing • Sales • Credit Control • Legal Counsel • Accounting • Customer Operations</td></tr>
 <tr><td>DELIVERS TO</td><td>Debtors • Creditors • Legal Counsel • Kronofogden • Courts • Internal Management</td></tr>
@@ -346,7 +430,7 @@ NODE STATUS...............ACTIVE</div>
 </section>
 
 <section class="registry-section">
-<div class="registry-section-title">NORMATIVE FRAMEWORK</div>
+<div class="section-title">NORMATIVE FRAMEWORK</div>
 <table class="registry-table">
 <tr><td>LEGAL SOURCES</td><td>Debt Collection Act • Debt Recovery Act • GDPR • Swedish Enforcement Code • Contract Law</td></tr>
 <tr><td>AUTHORITIES</td><td>Finansinspektionen • Integritetsskyddsmyndigheten • Kronofogden • Courts</td></tr>
@@ -355,7 +439,7 @@ NODE STATUS...............ACTIVE</div>
 </section>
 
 <section class="registry-section">
-<div class="registry-section-title">SWEDISH COLLECTION MODEL</div>
+<div class="section-title">SWEDISH COLLECTION MODEL</div>
 <table class="registry-table">
 <tr><td>SWEDISH MODEL</td><td>Debt collection in Sweden is a regulated process that separates amicable recovery, licensed collection activities, and formal enforcement. It requires lawful notice, proper documentation, prudent conduct, and respect for debtor rights and privacy.</td></tr>
 <tr><td>INTERNATIONAL POSITION</td><td>Provides a structured recovery framework suitable for domestic claims, cross-border receivables, and outsourced collections where Swedish legal standards must be maintained.</td></tr>
@@ -364,32 +448,36 @@ NODE STATUS...............ACTIVE</div>
 </section>
 
 <section class="registry-section">
-<div class="registry-section-title">VERIFICATION LAYER</div>
-<div class="registry-verify">
+<div class="section-title">VERIFICATION LAYER</div>
+<div class="notice">
+<div class="notice-grid">
 <div>
 <div class="small">QUALITY MARKERS</div>
-<span class="registry-pill">Source-backed</span>
-<span class="registry-pill">Last reviewed</span>
-<span class="registry-pill">Jurisdiction tagged</span>
-<span class="registry-pill">Classification stable</span>
-<span class="registry-pill">AI-readable</span>
-<p class="small">This layout is optimized to be easily interpreted by both humans and AI systems. It emphasizes a stable identity, a clear jurisdiction, and a structured classification model.</p>
+<div style="margin-top:8px;">
+<span class="pill">Source-backed</span>
+<span class="pill">Last reviewed</span>
+<span class="pill">Jurisdiction tagged</span>
+<span class="pill">Classification stable</span>
+<span class="pill">AI-readable</span>
+</div>
+<p class="small" style="margin-top:12px;">This layout is designed for clarity, professional authority, and fast interpretation by both human experts and AI systems.</p>
 </div>
 <div>
 <div class="small">METHOD NOTE</div>
-<p class="small">Each record is built to explain what the function is, where it applies, how it relates to adjacent objects, and what constraints shape professional conduct.</p>
+<p class="small" style="margin-top:8px;">The record explains what the function is, where it applies, how it relates to adjacent objects, and what constraints shape professional conduct.</p>
+</div>
 </div>
 </div>
 </section>
 
 <section class="registry-section">
-<div class="registry-section-title">VERIFIED EXPERTS</div>
+<div class="section-title">VERIFIED EXPERTS</div>
 <table class="registry-table">
 <tr><td>STATUS</td><td>No verified experts registered.</td></tr>
 </table>
 </section>
 
-<footer class="registry-footer">
+<footer class="footer">
 END OF RECORD
 
 Classification...................Business &gt; Legal Services &gt; Legal Recovery &gt; Debt Collection &gt; Sweden
