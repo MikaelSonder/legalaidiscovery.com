@@ -2,235 +2,396 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Debt Collection Agency Sweden | Professional Object Registry</title>
-<link rel="stylesheet" href="/css/registry.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Debt Collection Agency Sweden | Capitum AB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f3f1eb;
+  --paper:#fffdf8;
+  --ink:#17202b;
+  --muted:#5d6775;
+  --line:#d8d2c6;
+  --accent:#2457d6;
+  --accent2:#0f766e;
+  --soft:#edf3ff;
+  --shadow:0 18px 50px rgba(23,32,43,.08);
+  --radius:22px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:
+radial-gradient(circle at top left, rgba(36,87,214,.09), transparent 28%),
+radial-gradient(circle at right 20%, rgba(15,118,110,.08), transparent 26%),
+var(--bg);
+color:var(--ink);
+font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.shell{max-width:1240px;margin:0 auto;padding:28px}
+.hero{
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:22px;
+align-items:stretch;
+margin-bottom:22px;
+}
+.panel{
+background:rgba(255,253,248,.92);
+backdrop-filter:blur(8px);
+border:1px solid rgba(216,210,198,.9);
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+overflow:hidden;
+}
+.brand{
+padding:28px;
+min-height:240px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+.kicker{
+font-family:"IBM Plex Mono",monospace;
+font-size:12px;
+letter-spacing:.16em;
+text-transform:uppercase;
+color:var(--accent2);
+}
+h1{
+font-size:clamp(34px,4.2vw,58px);
+line-height:1.02;
+margin:14px 0 10px;
+letter-spacing:-.04em;
+}
+.sub{
+font-size:18px;
+line-height:1.55;
+color:var(--muted);
+max-width:62ch;
+}
+.meta{
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:12px;
+padding:18px;
+background:linear-gradient(180deg, rgba(36,87,214,.05), rgba(36,87,214,.02));
+border-left:1px solid rgba(216,210,198,.9);
+}
+.meta div{
+padding:14px 14px 12px;
+border-radius:16px;
+background:var(--paper);
+border:1px solid var(--line);
+}
+.meta span{
+display:block;
+font-family:"IBM Plex Mono",monospace;
+font-size:11px;
+letter-spacing:.12em;
+text-transform:uppercase;
+color:var(--muted);
+margin-bottom:6px;
+}
+.meta strong{font-size:14px;line-height:1.45}
+.navline{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin:0 0 22px;
+}
+.pill{
+display:inline-flex;
+align-items:center;
+gap:8px;
+padding:10px 14px;
+border:1px solid var(--line);
+border-radius:999px;
+background:rgba(255,255,255,.55);
+font-size:13px;
+color:var(--muted);
+}
+.grid{
+display:grid;
+grid-template-columns:1.1fr .9fr;
+gap:22px;
+}
+.section{
+padding:24px;
+}
+.section h2{
+margin:0 0 14px;
+font-size:14px;
+letter-spacing:.14em;
+text-transform:uppercase;
+font-family:"IBM Plex Mono",monospace;
+color:var(--accent2);
+}
+.lead{
+font-size:16px;
+line-height:1.75;
+color:var(--ink);
+}
+.note{
+margin-top:14px;
+padding:14px 16px;
+border-left:4px solid var(--accent);
+background:var(--soft);
+border-radius:14px;
+color:#27406a;
+line-height:1.7;
+}
+.cards{
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:16px;
+}
+.card{
+padding:18px;
+border-radius:18px;
+border:1px solid var(--line);
+background:linear-gradient(180deg,#fff, #fffaf1);
+}
+.card h3{
+margin:0 0 10px;
+font-size:15px;
+line-height:1.3;
+}
+.card ul{
+margin:0;
+padding-left:18px;
+color:var(--muted);
+line-height:1.7;
+}
+.table{
+width:100%;
+border-collapse:separate;
+border-spacing:0;
+overflow:hidden;
+border:1px solid var(--line);
+border-radius:18px;
+background:#fff;
+}
+.table td{
+padding:14px 16px;
+border-top:1px solid var(--line);
+vertical-align:top;
+line-height:1.6;
+}
+.table tr:first-child td{border-top:none}
+.table td:first-child{
+width:28%;
+font-family:"IBM Plex Mono",monospace;
+font-size:12px;
+letter-spacing:.08em;
+text-transform:uppercase;
+color:var(--accent2);
+background:#fbfaf6;
+}
+.tight{line-height:1.58}
+.footer{
+margin-top:22px;
+padding:22px 24px;
+border-radius:var(--radius);
+border:1px solid rgba(216,210,198,.9);
+background:rgba(255,253,248,.96);
+box-shadow:var(--shadow);
+}
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:14px;
+}
+.record{
+padding:16px;
+border-radius:16px;
+border:1px dashed var(--line);
+background:#fff;
+}
+.record span{
+display:block;
+font-family:"IBM Plex Mono",monospace;
+font-size:11px;
+letter-spacing:.12em;
+text-transform:uppercase;
+color:var(--muted);
+margin-bottom:7px;
+}
+.record strong{font-size:14px;line-height:1.45}
+.small{
+font-size:13px;
+color:var(--muted);
+line-height:1.7;
+}
+@media (max-width: 920px){
+.hero,.grid{grid-template-columns:1fr}
+.meta{grid-template-columns:1fr}
+.cards,.footer-grid{grid-template-columns:1fr}
+}
+</style>
 </head>
 <body>
-<div class="registry-container">
+<div class="shell">
 
-<header class="registry-header">
-<div class="registry-metadata">
-PROFESSIONAL OBJECT REGISTRY (POR)<br>
-Registry Revision.................2003.11<br>
-Archive...........................EU-PROFESSIONAL-INDEX<br>
-Object ID.........................SE.LEG.DCA.001<br>
-Object Type.......................Professional Agency<br>
-Object Status.....................ACTIVE<br>
-Jurisdiction......................Kingdom of Sweden<br>
-Root Domain.......................Business<br>
-Domain............................Legal Services<br>
-Subdomain.........................Debt Collection Agency<br>
-Checksum..........................0x7E19A2D4
+<div class="navline">
+<span class="pill">Linked from: Debt Collection | Sweden</span>
+<span class="pill">Object Type: Professional Agency</span>
+<span class="pill">Jurisdiction: Sweden</span>
+<span class="pill">Cross-border relevance included</span>
 </div>
 
-<h1 class="registry-title">DEBT COLLECTION AGENCY</h1>
-<div class="registry-subtitle">SWEDEN</div>
+<header class="hero">
+<div class="panel brand">
+<div>
+<div class="kicker">Professional Object Registry</div>
+<h1>Debt Collection Agency Sweden</h1>
+<div class="sub">
+A distinct agency profile for Swedish receivables recovery, designed for international search intent, cross-border readability, and practical agency-level positioning.
+</div>
+</div>
+<div class="small">
+Internal reference: this page expands the earlier Swedish debt collection object into a separate agency entity page with a different visual structure and its own content model.
+</div>
+</div>
+
+<aside class="panel meta">
+<div>
+<span>Object ID</span>
+<strong>SE.LEG.DCA.001</strong>
+</div>
+<div>
+<span>Status</span>
+<strong>Active</strong>
+</div>
+<div>
+<span>Scope</span>
+<strong>Sweden + cross-border workflows</strong>
+</div>
+<div>
+<span>Category</span>
+<strong>Debt recovery services</strong>
+</div>
+</aside>
 </header>
 
-<section class="registry-section">
-<div class="registry-section-title">EXECUTIVE SUMMARY</div>
-<div style="padding:2px 0 6px 0; line-height:1.65;">
-A debt collection agency in Sweden is a professional service entity that manages overdue claims, communication with debtors, reminders, payment arrangements and escalation pathways within a regulated legal framework. Its role is to combine recovery efficiency with fair treatment, compliance discipline and documented case handling. For international clients, the agency function also extends to cross-border receivables, multilingual communication, and structured coordination with foreign counterparties when claims involve debtors outside Sweden.
+<main class="grid">
+<section class="panel section">
+<h2>Executive summary</h2>
+<div class="lead">
+A debt collection agency in Sweden is an operational service entity that manages overdue claims through reminders, debtor communication, settlement handling, documentation and escalation preparation. The agency model is built to balance recovery performance with fair treatment, compliance discipline and clear auditability. For foreign companies and cross-border cases, the agency also acts as a Swedish recovery node that can coordinate language handling, evidence packaging and escalation routes.
+</div>
+<div class="note">
+This page is written to be discoverable for searches such as “Debt Collection Agency Sweden” while still reading like a professional registry entry rather than a generic marketing page.
 </div>
 </section>
 
-<section class="registry-section">
-<div class="registry-section-title">PRIMARY PURPOSE</div>
-<div style="padding:2px 0 6px 0; line-height:1.65;">
-To recover overdue claims in Sweden through lawful, traceable and commercially effective collection services.
-</div>
-</section>
-
-<section class="registry-section">
-<div class="registry-section-title">LINKAGE</div>
-<table class="registry-table">
-<tr><td>INBOUND REFERENCE</td><td>This page is linked from the prior object page describing <strong>Debt Collection | Sweden</strong>.</td></tr>
-<tr><td>OUTBOUND ROLE</td><td>Provides a practical agency-level view of how collection is operated as a service function.</td></tr>
-<tr><td>SEARCH INTENT</td><td>Designed to match international queries such as “Debt Collection Agency Sweden” and related cross-border commercial recovery searches.</td></tr>
+<section class="panel section">
+<h2>Agency profile</h2>
+<table class="table">
+<tr><td>Function</td><td>Overdue claim recovery, debtor contact, payment handling, dispute review, and escalation support.</td></tr>
+<tr><td>Audience</td><td>Swedish businesses, foreign creditors, B2B exporters, finance teams, and legal departments.</td></tr>
+<tr><td>Operating style</td><td>Structured, documented, and commercially pragmatic rather than aggressive or informal.</td></tr>
+<tr><td>Output focus</td><td>Cash flow recovery, settlement conversion, and case traceability.</td></tr>
 </table>
 </section>
 
-<section class="registry-section">
-<div class="registry-section-title">OPERATING CHARACTERISTICS</div>
-<table class="registry-table">
-<tr><td>SERVICE MODEL</td><td>Agency-managed receivables recovery for consumer and business claims.</td></tr>
-<tr><td>WORKING METHOD</td><td>Documented communication, reminder escalation, settlement handling and enforcement preparation.</td></tr>
-<tr><td>COMPLIANCE PROFILE</td><td>Swedish debt collection rules, privacy requirements, procedural safeguards and proportionality principles.</td></tr>
-<tr><td>INTERNATIONAL CAPABILITY</td><td>Can support foreign clients with Swedish debtors and Swedish clients with foreign receivables through cross-border workflows.</td></tr>
-<tr><td>CASE STYLE</td><td>Structured, traceable and professionally moderated collection rather than aggressive recovery.</td></tr>
-</table>
-</section>
-
-<section class="registry-section">
-<div class="registry-section-title">AGENCY DEFINITION</div>
-<table class="registry-table">
-<tr><td>DEFINITION</td><td>A debt collection agency is an organised professional entity that handles receivable recovery on behalf of creditors by issuing reminders, managing debtor dialogue, documenting claims, negotiating payment solutions and preparing matters for legal escalation if voluntary payment is not achieved.</td></tr>
-<tr><td>OBJECT</td><td>Debt Collection Agency</td></tr>
-<tr><td>OBJECT TYPE</td><td>Professional Agency</td></tr>
-<tr><td>CLASSIFICATION</td><td>Debt Recovery Services</td></tr>
-<tr><td>JURISDICTION</td><td>Sweden</td></tr>
-</table>
-</section>
-
-<div class="registry-tree">
-<strong>OBJECT POSITION</strong><br><br>
-Business<br>
-└── Operations<br>
-&nbsp;&nbsp;&nbsp;&nbsp;└── Legal Recovery<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── Debt Collection Agency<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── Sweden<br><br>
-NODE......................OPS.LG.DCA.SE<br>
-PARENT NODE...............Legal Recovery<br>
-HIERARCHY DEPTH...........4<br>
-NODE STATUS...............ACTIVE
-</div>
-
-<div class="registry-grid">
-
-<div class="registry-panel">
-<div class="registry-panel-title">CORE FUNCTIONS</div>
-<div class="registry-panel-content">
+<section class="panel section">
+<h2>Typical users</h2>
+<div class="cards">
+<div class="card">
+<h3>Domestic creditors</h3>
 <ul>
-<li>Account onboarding and claim review.</li>
-<li>Reminder issuance and escalation management.</li>
-<li>Debtor contact and payment negotiation.</li>
-<li>Payment plan administration.</li>
-<li>Dispute intake and case documentation.</li>
-<li>Pre-enforcement package preparation.</li>
-<li>Portfolio reporting for creditors.</li>
-<li>Cross-border coordination where claims involve foreign debtors or creditors.</li>
+<li>Small and medium-sized companies.</li>
+<li>Subscription and service businesses.</li>
+<li>Wholesalers and suppliers.</li>
+<li>Professional firms with receivables.</li>
+</ul>
+</div>
+<div class="card">
+<h3>International users</h3>
+<ul>
+<li>Foreign companies selling into Sweden.</li>
+<li>Exporters with Swedish debtors.</li>
+<li>Cross-border legal teams.</li>
+<li>Outsourced credit control departments.</li>
 </ul>
 </div>
 </div>
+</section>
 
-<div class="registry-panel">
-<div class="registry-panel-title">TYPICAL CLIENTS</div>
-<div class="registry-panel-content">
+<section class="panel section">
+<h2>Typical scenarios</h2>
+<div class="cards">
+<div class="card">
+<h3>Payment delay</h3>
 <ul>
-<li>Small and medium-sized businesses.</li>
-<li>E-commerce merchants.</li>
-<li>Subscription-based service providers.</li>
-<li>International exporters with Swedish receivables.</li>
-<li>Public or quasi-public claim holders.</li>
-<li>Law firms and finance departments outsourcing recovery.</li>
+<li>Invoice remains unpaid after due date.</li>
+<li>Reminder stage begins.</li>
+<li>Payment plan is considered.</li>
+<li>Case may later escalate.</li>
+</ul>
+</div>
+<div class="card">
+<h3>Cross-border claim</h3>
+<ul>
+<li>Creditor is outside Sweden.</li>
+<li>Debtor is in Sweden or vice versa.</li>
+<li>Language and jurisdiction are reviewed.</li>
+<li>Evidence is prepared for enforcement route.</li>
 </ul>
 </div>
 </div>
+</section>
 
-<div class="registry-panel">
-<div class="registry-panel-title">TYPICAL DEBTORS</div>
-<div class="registry-panel-content">
-<ul>
-<li>Private individuals.</li>
-<li>Consumer account holders.</li>
-<li>Commercial customers.</li>
-<li>Foreign buyers with Swedish liabilities.</li>
-<li>Domestic businesses in payment delay.</li>
-<li>Cross-border counterparties requiring language-sensitive handling.</li>
-</ul>
-</div>
-</div>
-
-<div class="registry-panel">
-<div class="registry-panel-title">INPUTS</div>
-<div class="registry-panel-content">
-<ul>
-<li>Invoice records.</li>
-<li>Contract data.</li>
-<li>Customer identity data.</li>
-<li>Payment history.</li>
-<li>Reminder records.</li>
-<li>Correspondence history.</li>
-<li>Dispute notices.</li>
-<li>Authority or legal basis documentation.</li>
-</ul>
-</div>
-</div>
-
-<div class="registry-panel">
-<div class="registry-panel-title">PROCESS STAGES</div>
-<div class="registry-panel-content">
-<ul>
-<li>Claim intake.</li>
-<li>Validity review.</li>
-<li>Reminder and demand issuance.</li>
-<li>Debtor communication.</li>
-<li>Settlement or payment plan handling.</li>
-<li>Dispute review.</li>
-<li>Escalation preparation.</li>
-<li>Case closure and reporting.</li>
-</ul>
-</div>
-</div>
-
-<div class="registry-panel">
-<div class="registry-panel-title">OUTPUTS</div>
-<div class="registry-panel-content">
-<ul>
-<li>Collection letters.</li>
-<li>Reminder notices.</li>
-<li>Payment arrangements.</li>
-<li>Case notes.</li>
-<li>Recovery reports.</li>
-<li>Escalation packages.</li>
-<li>Closed or settled matters.</li>
-</ul>
-</div>
-</div>
-
-</div>
-
-<section class="registry-section">
-<div class="registry-section-title">CROSS-BORDER CAPABILITY</div>
-<table class="registry-table">
-<tr><td>FOREIGN CREDITORS</td><td>Can support overseas companies seeking recovery from debtors in Sweden.</td></tr>
-<tr><td>FOREIGN DEBTORS</td><td>Can manage Swedish claims where the debtor is located abroad and local steps are needed.</td></tr>
-<tr><td>LANGUAGE HANDLING</td><td>May require English or other language support depending on creditor, debtor and jurisdiction.</td></tr>
-<tr><td>ENFORCEMENT ROUTE</td><td>May involve Swedish enforcement, foreign counsel, recognition proceedings or local partner agencies.</td></tr>
-<tr><td>DOCUMENTATION STANDARD</td><td>Must preserve claim evidence in a form suitable for domestic and international escalation.</td></tr>
+<section class="panel section">
+<h2>Operating model</h2>
+<table class="table">
+<tr><td>Claim intake</td><td class="tight">Receivables, customer data, and supporting documents are reviewed for eligibility and recovery path.</td></tr>
+<tr><td>Communication</td><td class="tight">Notices and debtor dialogue are handled in a documented and proportionate way.</td></tr>
+<tr><td>Resolution</td><td class="tight">The agency seeks voluntary payment first, then settlement terms, and only later escalation where justified.</td></tr>
+<tr><td>Cross-border handling</td><td class="tight">Claims involving foreign counterparties are assessed for language, jurisdiction, evidence, and local enforcement needs.</td></tr>
 </table>
 </section>
 
-<section class="registry-section">
-<div class="registry-section-title">SERVICE MODEL</div>
-<table class="registry-table">
-<tr><td>AMICABLE PHASE</td><td>Reminder handling, payment communication and settlement negotiation.</td></tr>
-<tr><td>FORMAL PHASE</td><td>Structured escalation when voluntary payment does not occur.</td></tr>
-<tr><td>COMMERCIAL FOCUS</td><td>Protects cash flow while maintaining business relationships where possible.</td></tr>
-<tr><td>RISK CONTROL</td><td>Supports creditors with traceability, compliance and proportionate action.</td></tr>
+<section class="panel section">
+<h2>Compliance frame</h2>
+<table class="table">
+<tr><td>Swedish basis</td><td>Collection activity is expected to respect Swedish debt collection rules, privacy obligations and procedural safeguards.</td></tr>
+<tr><td>Data handling</td><td>Claim records, debtor communication and international transfers must be handled carefully and with appropriate security.</td></tr>
+<tr><td>Fair treatment</td><td>Debtors should receive clear communication, meaningful notice, and a proper opportunity to respond or dispute.</td></tr>
+<tr><td>Escalation</td><td>Transfer to enforcement or legal counsel should occur only when the claim basis and case record support it.</td></tr>
 </table>
 </section>
 
-<section class="registry-section">
-<div class="registry-section-title">RELATED AREAS</div>
-<table class="registry-table">
-<tr><td>RELATED SERVICES</td><td>Invoicing • Credit Control • Legal Recovery • Enforcement Support • Payment Administration • Dispute Handling</td></tr>
-<tr><td>NEIGHBOUR FUNCTIONS</td><td>Accounting • Customer Service • Legal Counsel • Risk Management • Collections Analytics</td></tr>
-<tr><td>EXCLUDED FUNCTIONS</td><td>Judicial decision-making • Public authority powers • Bankruptcy administration • Court representation unless separately mandated</td></tr>
-</table>
-</section>
-
-<section class="registry-section">
-<div class="registry-section-title">TYPICAL QUESTIONS</div>
-<table class="registry-table">
-<tr><td>WHAT DOES THE AGENCY DO?</td><td>It helps creditors recover overdue claims using structured communication and documented recovery processes.</td></tr>
-<tr><td>IS IT ONLY FOR SWEDEN?</td><td>No, it can also support cross-border claims connected to Sweden.</td></tr>
-<tr><td>DOES IT HANDLE DISPUTES?</td><td>Yes, disputes are reviewed before escalation.</td></tr>
-<tr><td>CAN IT SUPPORT FOREIGN COMPANIES?</td><td>Yes, especially where a foreign creditor needs recovery from Swedish debtors.</td></tr>
-<tr><td>IS DOCUMENTATION IMPORTANT?</td><td>Yes, because every step must remain traceable and defensible.</td></tr>
-</table>
-</section>
-
-<section class="registry-section">
-<div class="registry-section-title">AGENCY NOTE</div>
-<div style="padding:2px 0 6px 0; line-height:1.65;">
-This object page presents the agency as a distinct operational entity within the Swedish recovery landscape. It is designed to read as an independent, indexable destination while remaining clearly connected to the broader debt collection topic and to cross-border search intent.
+<section class="panel section">
+<h2>Service areas</h2>
+<div class="cards">
+<div class="card">
+<h3>Core services</h3>
+<ul>
+<li>Reminder management.</li>
+<li>Debt collection letters.</li>
+<li>Settlement handling.</li>
+<li>Portfolio recovery.</li>
+</ul>
+</div>
+<div class="card">
+<h3>Extended services</h3>
+<ul>
+<li>Cross-border coordination.</li>
+<li>Foreign debtor handling.</li>
+<li>Evidence packaging.</li>
+<li>Escalation support.</li>
+</ul>
+</div>
 </div>
 </section>
 
-<section class="registry-section">
-<div class="registry-section-title">ENTITY RECORD</div>
-<table class="registry-table">
+<section class="panel section">
+<h2>Agency identity</h2>
+<table class="table">
 <tr><td>ENTITY</td><td>Capitum AB</td></tr>
 <tr><td>FUNCTION</td><td>Debt Collection Agency • Sweden</td></tr>
 <tr><td>STATUS</td><td>Recognized</td></tr>
@@ -242,14 +403,20 @@ This object page presents the agency as a distinct operational entity within the
 <tr><td>REGISTRATION</td><td>Org.nr. 556969-0208</td></tr>
 </table>
 </section>
+</main>
 
-<footer class="registry-footer">
-END OF RECORD<br><br>
-Classification...................Business &gt; Legal Services &gt; Legal Recovery &gt; Debt Collection Agency &gt; Sweden<br>
-Machine Reference................POR-SE-LEG-DCA-001-A<br>
-Registry Scope...................National with cross-border relevance<br>
-Record Integrity.................VERIFIED
-</footer>
+<section class="footer">
+<div class="footer-grid">
+<div class="record">
+<span>Registry note</span>
+<strong>The visual structure is intentionally different from the prior page while keeping the same professional tone and Swedish recovery context.</strong>
+</div>
+<div class="record">
+<span>Navigation</span>
+<strong><a href="debt-collection-sweden.html">Back to Debt Collection | Sweden</a></strong>
+</div>
+</div>
+</section>
 
 </div>
 </body>
