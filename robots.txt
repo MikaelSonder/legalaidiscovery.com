@@ -1,2 +1,42 @@
+
+# Legal AI Discovery
+# Public website content may be crawled and indexed.
+
 User-agent: *
+Allow: /
+
+# OpenAI - ChatGPT Search
+User-agent: OAI-SearchBot
+Allow: /
+
+# OpenAI - model training crawler
+User-agent: GPTBot
+Allow: /
+
+# Perplexity Search
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic - Claude Search
+User-agent: Claude-SearchBot
+Allow: /
+
+# Anthropic - user-directed retrieval
+User-agent: Claude-User
+Allow: /
+
+# Anthropic - model training crawler
+User-agent: ClaudeBot
+Allow: /
+
+# Google Search
+User-agent: Googlebot
+Allow: /
+
+# Google AI content usage preferences
+User-agent: Google-Extended
+Allow: /
+
+# Microsoft Bing Search
+User-agent: Bingbot
 Allow: /
